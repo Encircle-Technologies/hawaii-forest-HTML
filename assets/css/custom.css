@@ -1,0 +1,347 @@
+@layer components {}
+
+@layer utilities {
+    @keyframes smoothScroll {
+        0% {
+            transform: translateY(-100px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes smoothup {
+        100% {
+            display: none;
+        }
+    }
+
+    @keyframes smoothdown {
+        0% {
+            display: block;
+        }
+    }
+
+    /* announcement start */
+    .announcement.up {
+        animation: smoothup 0s forwards;
+    }
+
+    .announcement.down {
+        animation: smoothdown 0s forwards;
+    }
+
+    .search-bar.active {
+        @apply block;
+    }
+
+    .announcement-wrapper .btn-link-white {
+        @apply text-White duration-75 delay-75 ease-linear hover:text-Orange;
+    }
+
+    .announcement-wrapper .btn-link-white:hover img {
+        filter: invert(50%) sepia(15%) saturate(2626%) hue-rotate(350deg) brightness(100%) contrast(100%);
+    }
+
+    .announcement-bar p {
+        @apply text-White font-museo font-500 text-17 leading-[21px] m-0 p-0;
+    }
+
+    header.header {
+        @apply relative bg-Beige top-0 left-0 w-full z-999 1199:absolute 1199:bg-transparent;
+    }
+
+    .header .logo .brown {
+        @apply xl:block 1199:opacity-0
+    }
+    .header .logo a {
+        @apply 1199:relative;
+    }
+
+    @screen 1199{
+        .header .logo a::after{
+            @apply content-[''] absolute top-0 left-0 h-[147%] w-full object-cover z-99;
+            background-image: url('./../../images/logo-white.svg')
+        }
+        .header.is-sticky .logo a::after{
+            @apply hidden
+        }
+        .header.header-transparent .logo a::after{
+            @apply hidden;
+        }
+    }
+
+    
+
+    .header .logo .black {
+        @apply hidden
+    }
+
+    header.header-transparent .logo .white {
+        @apply block
+    }
+
+    header.header-transparent .logo .black {
+        @apply hidden
+    }
+
+    header.is-sticky .logo .white {
+        @apply hidden
+    }
+    header.is-sticky .logo .brown {
+        @apply hidden
+    }
+
+    header.is-sticky .logo .black {
+        @apply block;
+    }
+
+    header.header-transparent {
+        @apply absolute bg-transparent;
+    }
+
+    header.is-sticky {
+        animation: smoothScroll 1s forwards;
+        z-index: 1030;
+        @apply fixed bg-Beige/40 drop-shadow-menu backdrop-blur-[15px];
+    }
+
+    .nav-top {
+        @apply 1199:pt-10 xl:pt-10
+    }
+
+    header.is-sticky .nav-top {
+        @apply py-10
+    }
+
+    .navbar ul>li {
+        @apply relative 1199:p-20 1199:static 1199:w-full flex flex-wrap  items-center justify-between;
+    }
+    .navbar ul>li.has-sub {
+        @apply 1199:flex-row-reverse
+    }
+    span.submenu-opened {
+        @apply rotate-180
+    }
+    span.submenu-opened svg path{
+        @apply fill-Orange;
+    }
+
+    ul.sub-menu.open li{
+        @apply 1199:p-0 justify-center xl:max-w-[225px]
+    }
+
+    header.header .navbar ul>li>a {
+        @apply text-Dark_Choco font-museo font-500 text-17 leading-[21px] xxxl:text-20 xxxl:leading-24 block m-0 p-0 duration-300 delay-150 ease-linear;
+    }
+
+    header.header-transparent .navbar ul>li>a {
+        @apply text-White font-museo font-500 text-17 leading-[21px] xxxl:text-20 xxxl:leading-24 block m-0 p-0 duration-300 delay-150 ease-linear;
+    }
+
+    header.is-sticky .navbar ul>li>a {
+        @apply xl:text-Dark_Choco;
+    }
+    .header.is-sticky .nav-top>a svg path{
+        @apply 1199:fill-Dark_Choco
+    }
+
+    header.is-sticky .navbar ul>li>a.active,
+    header.is-sticky .navbar ul>li:hover>a,
+    header.is-sticky .navbar ul>li.active>a,
+    header.header .navbar ul>li>a.active,
+    header.header .navbar ul>li:hover>a,
+    header.header .navbar ul>li.active>a {
+        @apply text-Orange
+    }
+
+    .navbar ul>li>ul.sub-menu {
+        @apply absolute top-[100%] left-[50%] text-center w-full min-w-[max-content] bg-White/20 backdrop-blur border-1 border-solid border-White rounded-10 flex flex-col items-center justify-center p-0 m-0 lg:mt-20 opacity-0 -z-100 invisible translate-y-[20px] translate-x-minus_50 transition-all duration-300 delay-150 ease-linear;
+    }
+    .navbar ul>li>ul.sub-menu.open {
+        @apply 1199:visible 1199:relative 1199:opacity-100
+    }
+    
+
+    .navbar ul>li>ul.sub-menu>li>a {
+        @apply block text-White font-museo font-500 text-17 leading-[21px] m-0 p-20 duration-300 delay-150 ease-linear hover:text-Orange;
+    }
+    header.is-sticky .navbar-toggler svg path{
+        @apply !fill-Dark_Choco;
+    }
+
+    @screen xl {
+        .navbar ul>li:hover>ul.sub-menu {
+            @apply visible opacity-100 translate-y-0 z-1 drop-shadow-dropdown;
+        }
+
+        /* .navbar ul>li:last-child>ul.sub-menu {
+            @apply left-auto right-0 translate-x-0
+        } */
+    }
+
+    @screen 1199 {
+        .logo img {
+            @apply h-[110px]
+        }
+
+        .menu-open {
+            @apply relative;
+        }
+
+        .menu-open:before {
+            content: "";
+            @apply absolute top-0 left-0 w-full h-full bg-Black/60 z-2;
+        }
+
+        .navbar-toggler.active svg path,
+        .header.is-sticky .navbar-toggler.active svg path {
+            @apply !fill-Orange;
+        }
+
+        .navbar {
+            @apply bg-transparent overflow-y-auto overflow-x-hidden h-[calc(100dvh_-_10.5dvh)] w-full left-0 px-0 pb-50 absolute top-[100%] duration-300 ease-linear delay-150 max-w-none hidden;
+        }
+
+        .navbar.active {
+            @apply block;
+        }
+    }
+
+    /* banner start */
+    .banner-wrapper .banner-video {
+        @apply flex flex-wrap items-center justify-center;
+    }
+
+    .banner-wrapper .banner-video:before {
+        content: "";
+        @apply absolute top-0 left-0 w-full h-[200px] bg-header_gradient z-1;
+    }
+
+    .banner-wrapper .banner-slide .swiper-slide:before {
+        content: "";
+        @apply absolute top-0 left-0 w-full h-[200px] bg-header_gradient z-1;
+    }
+
+    .banner-wrapper .radial-pattern:before {
+        content: "";
+        @apply absolute top-0 left-0 w-full h-full bg-Black/40;
+    }
+
+    .banner-wrapper .radial-pattern:after {
+        content: "";
+        @apply absolute top-0 left-0 w-full h-full bg-radial;
+    }
+
+    .banner-wrapper .swiper-pagination {
+        @apply flex flex-wrap items-center justify-center p-0 gap-5 lg:gap-10;
+    }
+
+    .banner-wrapper .swiper-pagination .swiper-pagination-bullet {
+        @apply block w-[12px] h-[12px] rounded-100 bg-White m-0 p-0 opacity-100;
+    }
+
+    .banner-wrapper .swiper-pagination .swiper-pagination-bullet-active {
+        @apply bg-Apple_Green;
+    }
+
+    /* banner end */
+
+    /* Adventure card start */
+    .takeover-card--image-wrapper {
+        transition: clip-path .75s, -webkit-clip-path .75s, z-index 1s;
+    }
+
+    .takeover-card--image-wrapper:after {
+        content: "";
+        @apply absolute w-full h-full top-0 left-0 bg-cardoverlay pointer-events-none z-[25];
+    }
+
+    .card-image:after {
+        content: "";
+        @apply absolute w-full h-full top-0 left-0 bg-cardoverlay;
+    }
+
+    .card-image img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: 26%;
+    }
+
+    .takeover-card--image-wrapper span {
+        box-sizing: border-box;
+        display: block;
+        overflow: hidden;
+        width: initial;
+        height: initial;
+        background: none;
+        opacity: 1;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .takeover-card--image-wrapper span img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        margin: auto;
+        display: block;
+        width: 0;
+        height: 0;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .card1 {
+        clip-path: inset(0 20% 0 0);
+        -webkit-clip-path: inset(0 20% 0 0);
+    }
+
+    .card2 {
+        clip-path: inset(0 20% 0 20%);
+        -webkit-clip-path: inset(0 20% 0 20%);
+    }
+
+    .card3 {
+        clip-path: inset(0 20% 0 40%);
+        -webkit-clip-path: inset(0 20% 0 40%);
+    }
+
+    .card4 {
+        clip-path: inset(0 20% 0 60%);
+        -webkit-clip-path: inset(0 20% 0 60%);
+    }
+
+    .card5 {
+        clip-path: inset(0 0% 0 80%);
+        -webkit-clip-path: inset(0 0% 0 80%);
+    }
+
+    .highlighted {
+        clip-path: inset(0 0% 0 0%);
+        -webkit-clip-path: inset(0 0% 0 0%);
+    }
+
+    .takeover-card .details {
+        transition: z-index .75s;
+    }
+
+    /* Adventure card end */
+}

@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hawaii-forest-html</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/zyv2tbn.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zyv2tbn.css">
+
+    <!-- Main custom css -->
+    <link href="../assets/css/dist/style.css" media="screen" rel="stylesheet" />
+</head>
+
+<body class="home">
+    <!-- Skip Links -->
+    <a href="#menu" role="button" tabindex="0" class="skip-link absolute top-0 left-[-50%]">Skip to Menu</a>
+    <a href="#main-content" role="button" tabindex="-1" class="skip-link absolute top-0 left-[-50%]">Skip to Main
+        Content</a>
+    <a href="#footer" role="button" tabindex="-1" class="skip-link absolute top-0 left-[-50%]">Skip to Footer</a>
+
+    <header class="header header-transparent">
+        <div class="announcement-wrapper bg-green xl:h-[82px]">
+            <div class="xl:px-40 xl3:px-0 px-30 xl3:max-w-screen-2xl mx-auto 1199:py-[14px] py-20">
+                <div class="flex flex-wrap items-center justify-center m-0 p-0 w-full relative">
+                    <div class="w-full xl:w-6/12">
+                        <div class="announcement-bar swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide 1199:text-center">
+                                    <p>
+                                        This is the first example of a sitewide notice.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide 1199:text-center">
+                                    <p>
+                                        This is the first example of a sitewide notice.
+                                    </p>
+                                </div>
+                                <div class="swiper-slide 1199:text-center">
+                                    <p>
+                                        This is the first example of a sitewide notice.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full xl:w-6/12 relative">
+                        <ul class="hidden xl:flex flex-row gap-5 m-0 p-0 items-center justify-end relative">
+                            <li>
+                                <a href="tel:808.331.8505" class="btn btn-link-white btn-ico" aria-label="Phone number">
+                                    <img src="../assets/images/phone-white.svg" width="20" height="20" alt="phone" />
+                                    <span>808.331.8505</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="btn btn-transperent" aria-label="Book now">
+                                    Book Now
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="btn btn-transperent" aria-label="Zipline tour">
+                                    Zipline Tours
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="btn-search block">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.289 15.7606L15.9972 12.4688C16.5957 11.2718 16.9947 9.87531 16.9947 8.4788C16.9947 3.79052 13.2042 0 8.51591 0C3.82763 0 0.0371094 3.79052 0.0371094 8.4788C0.0371094 13.1671 3.82763 16.9576 8.51591 16.9576C9.91242 16.9576 11.3089 16.5586 12.5059 15.9601L15.7977 19.2519C16.7952 20.2494 18.2915 20.2494 19.289 19.2519C20.1867 18.2544 20.1867 16.7581 19.289 15.7606ZM8.51591 14.9626C4.92489 14.9626 2.03212 12.0698 2.03212 8.4788C2.03212 4.88778 4.92489 1.99501 8.51591 1.99501C12.1069 1.99501 14.9997 4.88778 14.9997 8.4788C14.9997 12.0698 12.1069 14.9626 8.51591 14.9626Z"
+                                            fill="#FEFEFE" />
+                                    </svg>
+                                </a>
+                                <div class="search-bar hidden w-full max-w-[246px]">
+                                    <div
+                                        class="flex items-center py-0 pb-[4px] px-0 bg-White-100 border-0 border-b-1 border-solid border-White gap-[10px] w-full">
+                                        <form class="w-full block">
+                                            <input type="text" id="search" name="search" placeholder="Search..."
+                                                class="block p-0 m-0 bg-transparent border-0 outline-0 w-full text-17 leading-[21px] text-White font-300 placeholder:text-16 placeholder:font-museo placeholder:font-300 placeholder:text-White placeholder:opacity-100">
+                                        </form>
+                                        <a href="javascript:void(0);" class="btn-close-search">
+                                            <img src="../assets/images/close-cross.svg" width="14" height="14"
+                                                alt="close">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:px-40 xl3:px-0 px-30 w-full xl3:max-w-screen-2xl mx-auto 1199:static relative">
+            <div class="nav-top flex flex-wrap justify-between items-start xl:items-center w-full">
+                <a href="tel:808.331.8505" class="btn btn-link-white btn-ico xl:hidden mt-20" aria-label="Phone number">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.4211 13.6684C17.1873 13.6684 15.979 13.4758 14.8337 13.0979C14.2747 12.9053 13.64 13.0537 13.2726 13.4284L11.0021 15.1432C8.39685 13.7527 6.72948 12.0863 5.35792 9.50001L7.02632 7.28316C7.44632 6.86316 7.59686 6.24841 7.41686 5.67264C7.0358 4.52 6.84213 3.31053 6.84213 2.07895C6.84213 1.20841 6.13372 0.5 5.26318 0.5H1.57895C0.708405 0.5 0 1.20841 0 2.07895C0 12.2358 8.26422 20.5 18.4211 20.5C19.2916 20.5 20 19.7916 20 18.9211V15.2474C20 14.3768 19.2916 13.6684 18.4211 13.6684Z"
+                            fill="#FEFEFE" />
+                    </svg>
+                </a>
+                <div class="logo">
+                    <a href="index.html" aria-label="Hawaii Forest & Trail Your Guide to Big Adventure">
+                        <img src="../assets/images/logo-white.svg" width="160" class="white"
+                            alt="Hawaii Forest & Trail Your Guide to Big Adventure">
+                        <img src="../assets/images/logo-black.svg" width="160" class="black"
+                            alt="Hawaii Forest & Trail Your Guide to Big Adventure">
+                    </a>
+                </div>
+                <button role="button" class="navbar-toggler xl:hidden bg-transparent border-0 p-0 mt-20" type="button">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.3548 1.5H4.64516C3.74032 1.5 3 2.2875 3 3.25C3 4.2125 3.74032 5 4.64516 5H18.3548C19.2597 5 20 4.2125 20 3.25C20 2.2875 19.2597 1.5 18.3548 1.5Z"
+                            fill="#FEFEFE" />
+                        <path
+                            d="M15.3548 8.5H1.64516C0.740323 8.5 0 9.2875 0 10.25C0 11.2125 0.740323 12 1.64516 12H15.3548C16.2597 12 17 11.2125 17 10.25C17 9.2875 16.2597 8.5 15.3548 8.5Z"
+                            fill="#FEFEFE" />
+                        <path
+                            d="M18.3548 15.5H4.64516C3.74032 15.5 3 16.2875 3 17.25C3 18.2125 3.74032 19 4.64516 19H18.3548C19.2597 19 20 18.2125 20 17.25C20 16.2875 19.2597 15.5 18.3548 15.5Z"
+                            fill="#FEFEFE" />
+                    </svg>
+                </button>
+                <nav id="menu" class="navbar">
+                    <div id="menu-main-menu" class="mobile-menu-main">
+                        <ul role="list"
+                            class="menu flex 1199:flex-col flex-wrap xl:items-center items-start my-0 xl:gap-5 xxxl:gap-10">
+                            <li>
+                                <a href="#" aria-label="Volcanoes">
+                                    Volcanoes
+                                </a>
+                                <ul role="list" class="sub-menu">
+                                    <li>
+                                        <a href="#" aria-label="Volcano Unveiled">
+                                            Volcano Unveiled
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Hidden Craters Hike">
+                                            Hidden Craters Hike
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Custom Adventures">
+                                            Custom Adventures
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Waterfalls">
+                                    Waterfalls
+                                </a>
+                                <ul role="list" class="sub-menu">
+                                    <li>
+                                        <a href="#" aria-label="Kohala Waterfalls Adventure">
+                                            Kohala Waterfalls Adventure
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Kohala Zip & Dip">
+                                            Kohala Zip & Dip
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Custom Adventures">
+                                            Custom Adventures
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Mauna Kea">
+                                    Mauna Kea
+                                </a>
+                                <ul role="list" class="sub-menu">
+                                    <li>
+                                        <a href="#" aria-label="Mauna Kea Adventures">
+                                            Mauna Kea Adventures
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Custom Adventures">
+                                            Custom Adventures
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Birding">
+                                    Birding
+                                </a>
+                                <ul role="list" class="sub-menu">
+                                    <li>
+                                        <a href="#" aria-label="Hakalau Exclusive">
+                                            Hakalau Exclusive
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Custom Adventures">
+                                            Custom Adventures
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Custom Experiences">
+                                    Custom Experiences
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Group Travel">
+                                    Group Travel
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Stewardship">
+                                    Stewardship
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Contact Us">
+                                    Contact Us
+                                </a>
+                                <ul role="list" class="sub-menu">
+                                    <li>
+                                        <a href="#" aria-label="Email">
+                                            Email
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Location">
+                                            Location
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="search-bar hidden 1199:block w-full p-20 ">
+                            <div
+                                class="flex items-center py-0 pb-[4px] px-0 bg-White-100 border-0 border-b-1 border-solid border-White w-full gap-[10px] ">
+                                <form class=" w-full block">
+                                    <input type="text" id="search" name="search" placeholder="Search..."
+                                        class="block p-0 m-0  bg-transparent border-0 outline-0 w-full text-17 leading-[21px] text-White font-300 placeholder:text-16 placeholder:font-museo placeholder:font-300 placeholder:text-White placeholder:opacity-100">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="btn-custom hidden 1199:flex btn-inline justify-center gap-[20px] py-20">
+                            <a href="javascript:void(0);" class="btn btn-transperent w-[137px]" aria-label="Book now">
+                                Book Now
+                            </a>
+                            <a href="javascript:void(0);" class="btn btn-transperent w-[158px]" aria-label="Zipline tour">
+                                Zipline Tours
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <!-- banner-start -->
+        <section class="banner-wrapper relative overflow-hidden 1199:h-[600px] h-[830px] anim">
+            <div class="banner-slider h-full w-full relative">
+                <div class="swiper banner-slide h-full">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide relative flex flex-col items-center justify-end">
+                            <div class="absolute top-0 left-0 w-full h-full radial-pattern">
+                                <img src="../assets/images/slider1.webp" width="1512" height="830"
+                                    class="w-full h-full object-cover" alt="Experience Hawaii the Big Island">
+                            </div>
+                            <div
+                                class="detail flex flex-wrap 1199:items-center items-start justify-center w-full xl:pt-[100px]">
+                                <div class="container-fluid">
+                                    <div
+                                        class="flex flex-col items-center justify-center text-center m-0 p-0 w-full relative">
+                                        <div class="w-full xl:w-8/12 anim-up">
+                                            <div class="title title-white capitalize mb-20 last:mb-0">
+                                                <h2 class="h1 mb-20 last:mb-0">
+                                                    Experience Hawaii the Big Island
+                                                </h2>
+                                                <span class="sub-white big">
+                                                    Just Like A Native
+                                                </span>
+                                            </div>
+                                            <div class="btn-custom">
+                                                <a href="javascript:void(0);" class="btn btn-transperent"
+                                                    aria-label="Experiences">
+                                                    Experiences
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative flex flex-col items-center justify-end">
+                            <div class="absolute top-0 left-0 w-full h-full radial-pattern">
+                                <img src="../assets/images/slider2.webp" width="1512" height="830"
+                                    class="w-full h-full object-cover" alt="Hawaii Forest and Trail">
+                            </div>
+                            <div
+                                class="detail flex flex-wrap 1199:items-center items-start justify-center w-full xl:pt-[100px]">
+                                <div class="container-fluid">
+                                    <div
+                                        class="flex flex-col items-center justify-center text-center m-0 p-0 w-full relative">
+                                        <div class="w-full xl:w-8/12 anim-up">
+                                            <div class="title title-white capitalize mb-20 last:mb-0">
+                                                <h2 class="h1 mb-20 last:mb-0">
+                                                    Hawaii Forest and Trail
+                                                </h2>
+                                                <span class="sub-white big">
+                                                    Celebrating 30 Years!
+                                                </span>
+                                            </div>
+                                            <div class="btn-custom">
+                                                <a href="javascript:void(0);" class="btn btn-transperent"
+                                                    aria-label="Custom Adventures">
+                                                    Custom Adventures
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative flex flex-col items-center justify-end">
+                            <div class="absolute top-0 left-0 w-full h-full radial-pattern">
+                                <img src="../assets/images/slider3.webp" width="1512" height="830"
+                                    class="w-full h-full object-cover" alt="The Premier Guide to Your">
+                            </div>
+                            <div
+                                class="detail flex flex-wrap 1199:items-center items-start justify-center w-full xl:pt-[100px]">
+                                <div class="container-fluid">
+                                    <div
+                                        class="flex flex-col items-center justify-center text-center m-0 p-0 w-full relative">
+                                        <div class="w-full xl:w-8/12 anim-up">
+                                            <div class="title title-white capitalize mb-20 last:mb-0">
+                                                <h2 class="h1 mb-20 last:mb-0">
+                                                    The Premier Guide to Your
+                                                </h2>
+                                                <span class="sub-white big">
+                                                    Next BIG Adventure
+                                                </span>
+                                            </div>
+                                            <div class="btn-custom">
+                                                <a href="javascript:void(0);" class="btn btn-transperent"
+                                                    aria-label="Waterfall Tours">
+                                                    Waterfall Tours
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-40"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- advanture-start -->
+        <section class="adventure-wrapper relative xl:pt-80 pt-40 bg-Beige anim ">
+            <div class="container-fluid">
+                <div class="flex flex-col items-center justify-center text-center m-0 mb-20 p-0 w-full">
+                    <div class="title title-Chocolate capitalize anim-up">
+                        <h2 class="mb-[8px]">
+                            Choose Your Own Adventure
+                        </h2>
+                        <span class="sub-red">
+                            Discover the Island of Hawai'i with Us
+                        </span>
+                    </div>
+                </div>
+                <div
+                    class="1199:hidden flex relative 1023:h-[auto] h-[529px] transition-all duration-300 delay-150 ease-linear lg:opacity-100">
+                    <div
+                        class="lg:block hidden takeover-card--image-wrapper card1 absolute top-0 left-0 right-0 bottom-0 w-full h-full z-10">
+                        <span>
+                            <img src="../assets/images/img-6.webp" width="1432" height="529" alt="Volcano Adventures">
+                        </span>
+                    </div>
+                    <div class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] lg:text-left text-center lg:py-0 py-8">
+                        <div class="details lg:absolute lg:p-20 pt-20 left-0 bottom-0 z-10">
+                            <div class="title title-white mb-[8px] anim-up">
+                                <h2>Volcano Adventures</h2>
+                            </div>
+                            <div class="content white mb-20 last:mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt...</p>
+                            </div>
+                            <a href="#" aria-label="Adventure Awaits" role="link" class="btn btn-transperent">Adventure
+                                Awaits</a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:block hidden takeover-card--image-wrapper card2 absolute top-0 left-0 right-0 bottom-0 w-full h-full z-10">
+                        <span>
+                            <img src="../assets/images/img-7.webp" width="1432" height="529" alt="Waterfall Adventures">
+                        </span>
+                    </div>
+                    <div class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] lg:text-left text-center lg:py-0 py-8">
+                        <div class="details lg:absolute lg:p-20 pt-20 left-0 bottom-0 z-10">
+                            <div class="title title-white mb-[8px] anim-up">
+                                <h2>Waterfall Adventures</h2>
+                            </div>
+                            <div class="content white mb-20 last:mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt...</p>
+                            </div>
+                            <a href="#" aria-label="Adventure Awaits" role="link" class="btn btn-transperent">Adventure
+                                Awaits</a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:block hidden takeover-card--image-wrapper card3 absolute top-0 left-0 right-0 bottom-0 w-full h-full z-10">
+                        <span>
+                            <img src="../assets/images/img-8.webp" width="1432" height="529" alt="Mauna Kea Adventures">
+                        </span>
+                    </div>
+                    <div
+                        class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] lg:text-left text-center lg:py-0 py-8">
+                        <div class="details lg:absolute lg:p-20 pt-20 left-0 bottom-0 z-10">
+                            <div class="title title-white mb-[8px] anim-up">
+                                <h2>Mauna Kea Adventures</h2>
+                            </div>
+                            <div class="content white mb-20 last:mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt...</p>
+                            </div>
+                            <a href="#" aria-label="Adventure Awaits" role="link" class="btn btn-transperent">Adventure
+                                Awaits</a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:block hidden takeover-card--image-wrapper card4 absolute top-0 left-0 right-0 bottom-0 w-full h-full z-10">
+                        <span>
+                            <img src="../assets/images/img-9.webp" width="1432" height="529"
+                                alt="Birdwatching Adventures">
+                        </span>
+                    </div>
+                    <div
+                        class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] lg:text-left text-center lg:py-0 py-8">
+                        <div class="details lg:absolute lg:p-20 pt-20 left-0 bottom-0 z-10">
+                            <div class="title title-white mb-[8px] anim-up">
+                                <h2>Birdwatching Adventures</h2>
+                            </div>
+                            <div class="content white mb-20 last:mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt...</p>
+                            </div>
+                            <a href="#" aria-label="Adventure Awaits" role="link" class="btn btn-transperent">Adventure
+                                Awaits</a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:block hidden takeover-card--image-wrapper card5 absolute top-0 left-0 right-0 bottom-0 w-full h-full z-10">
+                        <span>
+                            <img src="../assets/images/img-10.webp" width="1432" height="529" alt="Zipline Adventures">
+                        </span>
+                    </div>
+                    <div
+                        class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] lg:text-left text-center lg:py-0 py-8">
+                        <div class="details lg:absolute lg:p-20 pt-20 left-0 bottom-0 z-10">
+                            <div class="title title-white mb-[8px] anim-up">
+                                <h2>Zipline Adventures</h2>
+                            </div>
+                            <div class="content white mb-20 last:mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt...</p>
+                            </div>
+                            <a href="#" aria-label="Adventure Awaits" role="link" class="btn btn-transperent">Adventure
+                                Awaits</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper hidden 1199:block advanture-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex relative h-[529px] opacity-100">
+                            <div class="card-image absolute top-0 left-0 right-0 bottom-0 w-full h-full ">
+                                <span>
+                                    <img src="../assets/images/img-6.webp" width="1432" height="529"
+                                        alt="Volcano Adventures">
+                                </span>
+                            </div>
+                            <div
+                                class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] text-left lg:py-0 py-8">
+                                <div class="details absolute p-20 pt-20 left-0 bottom-0">
+                                    <div class="title title-white mb-[8px] anim-up">
+                                        <h2>Volcano Adventures</h2>
+                                    </div>
+                                    <div class="content white mb-20 last:mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt...</p>
+                                    </div>
+                                    <a href="#" aria-label="Adventure Awaits" role="link"
+                                        class="btn btn-transperent">Adventure Awaits</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex relative h-[529px] opacity-100">
+                            <div class="card-image absolute top-0 left-0 right-0 bottom-0 w-full h-full ">
+                                <span>
+                                    <img src="../assets/images/img-7.webp" width="1432" height="529"
+                                        alt="Waterfall Adventures">
+                                </span>
+                            </div>
+                            <div
+                                class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] text-left  lg:py-0 py-8">
+                                <div class="details absolute p-20 pt-20 left-0 bottom-0">
+                                    <div class="title title-white mb-[8px] anim-up">
+                                        <h2>Waterfall Adventures</h2>
+                                    </div>
+                                    <div class="content white mb-20 last:mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt...</p>
+                                    </div>
+                                    <a href="#" aria-label="Adventure Awaits" role="link"
+                                        class="btn btn-transperent">Adventure Awaits</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex relative h-[529px] opacity-100">
+                            <div class="card-image  absolute top-0 left-0 right-0 bottom-0 w-full h-full ">
+                                <span>
+                                    <img src="../assets/images/img-8.webp" width="1432" height="529"
+                                        alt="Mauna Kea Adventures">
+                                </span>
+                            </div>
+                            <div
+                                class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] text-left lg:py-0 py-8">
+                                <div class="details absolute p-20 pt-20 left-0 bottom-0">
+                                    <div class="title title-white mb-[8px] anim-up">
+                                        <h2>Mauna Kea Adventures</h2>
+                                    </div>
+                                    <div class="content white mb-20 last:mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt...</p>
+                                    </div>
+                                    <a href="#" aria-label="Adventure Awaits" role="link"
+                                        class="btn btn-transperent">Adventure Awaits</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex relative h-[529px] opacity-100">
+                            <div class="card-image  absolute top-0 left-0 right-0 bottom-0 w-full h-full ">
+                                <span>
+                                    <img src="../assets/images/img-9.webp" width="1432" height="529"
+                                        alt="Birdwatching Adventures">
+                                </span>
+                            </div>
+                            <div
+                                class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] text-left lg:py-0 py-8">
+                                <div class="details absolute p-20 pt-20 left-0 bottom-0">
+                                    <div class="title title-white mb-[8px] anim-up">
+                                        <h2>Birdwatching Adventures</h2>
+                                    </div>
+                                    <div class="content white mb-20 last:mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt...</p>
+                                    </div>
+                                    <a href="#" aria-label="Adventure Awaits" role="link"
+                                        class="btn btn-transperent">Adventure Awaits</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide flex relative h-[529px] opacity-100">
+                            <div class="card-image  absolute top-0 left-0 right-0 bottom-0 w-full h-full ">
+                                <span>
+                                    <img src="../assets/images/img-10.webp" width="1432" height="529"
+                                        alt="Zipline Adventures">
+                                </span>
+                            </div>
+                            <div
+                                class="takeover-card w-full lg:text-gray-sand relative lg:pb-[529px] text-left  lg:py-0 py-8">
+                                <div class="details absolute p-20 pt-20 left-0 bottom-0">
+                                    <div class="title title-white mb-[8px] anim-up">
+                                        <h2>Zipline Adventures</h2>
+                                    </div>
+                                    <div class="content white mb-20 last:mb-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt...</p>
+                                    </div>
+                                    <a href="#" aria-label="Adventure Awaits" role="link"
+                                        class="btn btn-transperent">Adventure Awaits</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- review-start -->
+        <section class="review-wrapper bg-Beige pt-[60px] pb-40 767:py-20">
+            <div class="container-fluid">
+                <div class="review-inner bg-Tengerine py-40 767:py-[28px] xxxl:px-[200px]">
+                    <div class="swiper review-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-content flex flex-col justify-center items-center">
+                                    <div class="social-icon mb-10">
+                                        <img src="../assets/images/tripadvisor.svg" width="60" height="60"
+                                            alt="social-icon">
+                                    </div>
+                                    <div class="title-museo title-white text-center flex flex-col gap-[10px] mb-10 last:mb-0 ">
+                                        <h4>
+                                            Tripadvisor
+                                        </h4>
+                                        <span class="sub-white">
+                                            74 Reviews
+                                        </span>
+                                    </div>
+                                    <div class="rating flex flex-wrap justify-between items-center gap-[10px] ">
+                                        <span class="sub-white">
+                                            5.0
+                                        </span>
+                                        <div class="rating-icon flex flex-wrap justify-center items-center">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-content flex flex-col justify-center items-center">
+                                    <div class="social-icon mb-10">
+                                        <img src="../assets/images/facebook-reveiw.svg" width="60" height="60"
+                                            alt="social-icon">
+                                    </div>
+                                    <div
+                                        class="title-museo title-white text-center flex flex-col gap-[10px] mb-10 last:mb-0">
+                                        <h4>
+                                            Tripadvisor
+                                        </h4>
+                                        <span class="sub-white">
+                                            14 Reviews
+                                        </span>
+                                    </div>
+                                    <div class="rating flex flex-wrap justify-between items-center gap-[10px]">
+                                        <span class="sub-white">
+                                            5.0
+                                        </span>
+                                        <div class="rating-icon flex flex-wrap justify-center items-center">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-content flex flex-col justify-center items-center">
+                                    <div class="social-icon mb-10">
+                                        <img src="../assets/images/traveler-logo.svg" width="120" height="120"
+                                            alt="social-icon">
+                                    </div>
+                                    <div
+                                        class="title-museo title-white text-center flex flex-col gap-[10px] mb-10 last:mb-0">
+                                        <h4>
+                                            Best of the Best
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-content flex flex-col justify-center items-center">
+                                    <div class="social-icon mb-10">
+                                        <img src="../assets/images/bi_google.svg" width="60" height="60"
+                                            alt="social-icon">
+                                    </div>
+                                    <div
+                                        class="title-museo title-white text-center flex flex-col gap-[10px] mb-10 last:mb-0">
+                                        <h4>
+                                            google
+                                        </h4>
+                                        <span class="sub-white">
+                                            126 Reviews
+                                        </span>
+                                    </div>
+                                    <div class="rating flex flex-wrap justify-between items-center gap-[10px]">
+                                        <span class="sub-white">
+                                            5.0
+                                        </span>
+                                        <div class="rating-icon flex flex-wrap justify-center items-center">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-content flex flex-col justify-center items-center">
+                                    <div class="social-icon mb-10">
+                                        <img src="../assets/images/bi_yelp.svg" width="60" height="60"
+                                            alt="social-icon">
+                                    </div>
+                                    <div
+                                        class="title-museo title-white text-center flex flex-col gap-[10px] mb-10 last:mb-0">
+                                        <h4>
+                                            yelp
+                                        </h4>
+                                        <span class="sub-white">
+                                            5 Reviews
+                                        </span>
+                                    </div>
+                                    <div class="rating flex flex-wrap justify-between items-center gap-[10px]">
+                                        <span class="sub-white">
+                                            5.0
+                                        </span>
+                                        <div class="rating-icon flex flex-wrap justify-center items-center">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                            <img src="../assets/images/star icon.svg" height="12" width="12" alt="star">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- location-start -->
+        <section class="location-wrapper  pt-40 xl:pb-60 bg-Beige relative  anim ">
+            <div class="container-fluid">
+                <div class="title title-chocolate text-center 767:text-left mb-40 anim-up">
+                    <span class="sub-red mb-[8px]">
+                        We Are Located On
+                    </span>
+                    <h2>
+                        The Island of Hawai'i
+                    </h2>
+                </div>
+                <div class="flex flex-wrap justify-center items-center xl:px-100 px-20">
+                    <div class="w-full lg:w-4/12">
+                        <div class="small-map anim-up ">
+                            <img src="../assets/images/small-map.svg" width="355" height="230"
+                                class="h-full w-full object-cover " alt="small-map">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-8/12 mt-[40px] anim-up">
+                        <div class="big-map">
+                            <img src="../assets/images/map.svg" width="849" height="699.53" class="object-cover ml-auto "
+                                alt="map">
+                            <div class="small-station" id="station1">
+                                <div class="station-name ">
+                                     <span class="arrow"></span>
+                                    <div class="station-content flex flex-col justify-center items-center ">
+                                        <div class="title title-red">
+                                            <h4>
+                                                Volcano Adventures
+                                            </h4>
+                                        </div>
+                                        <div class="btn-custom">
+                                            <a href="javascript:void(0);" role="link" aria-label="learn more" class="btn btn-red"> learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="small-station" id="station2">
+                                <div class="station-name">
+                                    <span class="arrow"></span>
+                                   <div class="station-content flex flex-col justify-center items-center ">
+                                       <div class="title title-red">
+                                           <h4>
+                                               Volcano Adventures
+                                           </h4>
+                                       </div>
+                                       <div class="btn-custom">
+                                           <a href="javascript:void(0);" role="link" aria-label="learn more" class="btn btn-red"> learn more</a>
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="small-station" id="station3">
+                                <div class="station-name ">
+                                    <span class="arrow "></span>
+                                   <div class="station-content flex flex-col justify-center items-center ">
+                                       <div class="title title-green">
+                                           <h4>
+                                                Hawaii Volcanoes National Park
+                                           </h4>
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="small-station" id="station4">
+                                <div class="station-name ">
+                                    <span class="arrow "></span>
+                                    <div class="station-content flex flex-col justify-center items-center">
+                                        <div class="title title-red">
+                                            <h4>
+                                                Birding Adventures
+                                            </h4>
+                                        </div>
+                                        <div class="btn-custom">
+                                            <a href="javascript:void(0);" role="link" aria-label="learn more" class="btn btn-red"> learn more</a>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="small-station" id="station5">
+                                <div class="station-name">
+                                    <span class="arrow "></span>
+                                    <div class="station-content flex flex-col justify-center items-center">
+                                        <div class="title title-red">
+                                            <h4>
+                                                Maunakea Adventures
+                                            </h4>
+                                        </div>
+                                        <div class="btn-custom">
+                                            <a href="javascript:void(0);" role="link" aria-label="learn more" class="btn btn-red"> learn more</a>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="small-station" id="station6">
+                                <div class="station-name">
+                                    <span class="arrow "></span>
+                                    <div class="station-content flex flex-col justify-center items-center">
+                                        <div class="title title-red">
+                                            <h4>
+                                                Waterfall Adventures
+                                            </h4>
+                                        </div>
+                                        <div class="btn-custom">
+                                            <a href="javascript:void(0);" role="link" aria-label="learn more" class="btn btn-red"> learn more</a>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="small-station" id="station7">
+                                <div class="station-name">
+                                    <span class="arrow "></span>
+                                    <div class="station-content flex flex-col justify-center items-center">
+                                        <div class="title title-red">
+                                            <h4>
+                                                Zipline Adventures
+                                            </h4>
+                                        </div>
+                                        <div class="btn-custom">
+                                            <a href="javascript:void(0);" role="link" aria-label="learn more" class="btn btn-red"> learn more</a>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="small-station" id="station8">
+                                <div class="station-name">
+                                    <span class="arrow "></span>
+                                    <div class="station-content flex flex-col justify-center items-center">
+                                        <div class="title title-chocolate">
+                                            <h4>
+                                                Waikoloa/Kohala Coast Resorts
+                                            </h4>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- why choos us style-1 -->
+        <section class="grid-box-wrapper bg-Beige xl:py-100 py-40 anim">
+            <div class="container-fluid">
+                <div class="grid-box-inner py-60 lg:px-60 lg:py-100 bg-Mint_Green rounded-[28px]">
+                    <div class="title title-chocolate text-center mb-40 anim-up">
+                        <h2>
+                            Why Choose Us
+                        </h2>
+                    </div>
+                    <div class="about-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="swiper-slide flex flex-col items-center justify-center gap-[20px] px-20 1023:px-15">
+                                <div class="img landscape">
+                                    <img src="../assets/images/img-2.webp" width="258" height="174" class="img-fluid anim-img"
+                                        alt="slide1">
+                                </div>
+                                <div class="details text-center pt-20 max-w-[258px] 1023:max-w-full anim-up">
+                                    <div class="title title-green mb-10 ">
+                                        <h4>Fully Outfitted <br>
+                                            Adventures</h4>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            Hawaii Forest & Trail prides itself on offering authentic experiences that
+                                            allow visitors to connect deeply with Hawaii's natural beauty and cultural
+                                            heritage. These experiences are designed to provide genuine insights into
+                                            the island's ecosystems and traditions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex flex-col items-center justify-center gap-6 px-20 1023:px-15">
+                                <div class="img landscape">
+                                    <img src="../assets/images/img-3.webp" width="258" height="174" class="img-fluid anim-img"
+                                        alt="slide1">
+                                </div>
+                                <div class="details text-center pt-20 max-w-[258px] 1023:max-w-full anim-up">
+                                    <div class="title title-green mb-10">
+                                        <h4>Expert <br>
+                                            Guides</h4>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            The company's team of expert guides are passionate about sharing their
+                                            knowledge and love for Hawaii's landscapes, wildlife, and history. They are
+                                            trained to provide enriching experiences, ensuring that every tour is both
+                                            educational and enjoyable.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex flex-col items-center justify-center gap-6 px-20 1023:px-15">
+                                <div class="img landscape">
+                                    <img src="../assets/images/img-4.webp" width="258" height="174" class="img-fluid anim-img"
+                                        alt="slide1">
+                                </div>
+                                <div class="details text-center pt-20 max-w-[258px] 1023:max-w-full anim-up">
+                                    <div class="title title-green mb-10">
+                                        <h4>Small Group <br>
+                                            Tours</h4>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            With a focus on sustainability and personalized experiences, Hawaii Forest &
+                                            Trail keeps its tour groups small, allowing for intimate interactions with
+                                            nature and personalized attention from guides. This ensures that guests have
+                                            a more immersive and meaningful experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex flex-col items-center justify-center gap-6 px-20 1023:px-15">
+                                <div class="img landscape">
+                                    <img src="../assets/images/img-5.webp" width="258" height="174" class="img-fluid anim-img"
+                                        alt="slide1">
+                                </div>
+                                <div class="details text-center pt-20 max-w-[258px] 1023:max-w-full anim-up">
+                                    <div class="title title-green mb-10">
+                                        <h4>Exclusive <br>
+                                            Access</h4>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            The company offers off-the-beaten-path adventures that take guests to
+                                            lesser-known destinations and hidden gems across the Hawaiian Islands. These
+                                            unique experiences provide an opportunity to explore untouched wilderness
+                                            and discover secret spots that few tourists ever see.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination ">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center xl:pt-[40px]">
+                        <div class="btn-custom">
+                            <a href="javascript:void(0);" aria-label="learn more" role="link" class="btn btn-green">
+                                learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- why choos us style-2 -->
+        <section class="grid-box-wrapper  hidden bg-Beige xl:py-100 py-40 ">
+            <div class="container-fluid">
+                <div class="grid-box-inner py-60 lg:px-60 lg:py-100 bg-Mint_Green rounded-[28px]">
+                    <div class="title title-chocolate text-center mb-40">
+                        <h2>
+                            Why Choose Us
+                        </h2>
+                    </div>
+                    <div class="about-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="swiper-slide flex flex-col items-center justify-center gap-[20px] px-20 1023:px-15">
+                                <div class="img landscape">
+                                    <img src="../assets/images/mountain-icon.svg" width="140" height="140"
+                                        class="img-fluid" alt="slide1">
+                                </div>
+                                <div class="details text-center pt-20 max-w-[258px] 1023:max-w-full">
+                                    <div class="title title-green mb-10">
+                                        <h4>Fully Outfitted <br>
+                                            Adventures</h4>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            Hawaii Forest & Trail prides itself on offering authentic experiences that
+                                            allow visitors to connect deeply with Hawaii's natural beauty and cultural
+                                            heritage. These experiences are designed to provide genuine insights into
+                                            the island's ecosystems and traditions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex flex-col items-center justify-center gap-6 px-20 1023:px-15">
+                                <div class="img landscape">
+                                    <img src="../assets/images/mountainer.svg" width="140" height="140"
+                                        class="img-fluid" alt="slide1">
+                                </div>
+                                <div class="details text-center pt-20 max-w-[258px] 1023:max-w-full">
+                                    <div class="title title-green mb-10">
+                                        <h4>Expert <br>
+                                            Guides</h4>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            The company's team of expert guides are passionate about sharing their
+                                            knowledge and love for Hawaii's landscapes, wildlife, and history. They are
+                                            trained to provide enriching experiences, ensuring that every tour is both
+                                            educational and enjoyable.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex flex-col items-center justify-center gap-6 px-20 1023:px-15">
+                                <div class="img landscape">
+                                    <img src="../assets/images/tours-group.svg" width="140" height="140"
+                                        class="img-fluid" alt="slide1">
+                                </div>
+                                <div class="details text-center pt-20 max-w-[258px] 1023:max-w-full">
+                                    <div class="title title-green mb-10">
+                                        <h4>Small Group <br>
+                                            Tours</h4>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            With a focus on sustainability and personalized experiences, Hawaii Forest &
+                                            Trail keeps its tour groups small, allowing for intimate interactions with
+                                            nature and personalized attention from guides. This ensures that guests have
+                                            a more immersive and meaningful experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide flex flex-col items-center justify-center gap-6 px-20 1023:px-15">
+                                <div class="img landscape">
+                                    <img src="../assets/images/flower.svg" width="140" height="140" class="img-fluid"
+                                        alt="slide1">
+                                </div>
+                                <div class="details text-center pt-20 max-w-[258px] 1023:max-w-full">
+                                    <div class="title title-green mb-10">
+                                        <h4>Exclusive <br>
+                                            Access</h4>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            The company offers off-the-beaten-path adventures that take guests to
+                                            lesser-known destinations and hidden gems across the Hawaiian Islands. These
+                                            unique experiences provide an opportunity to explore untouched wilderness
+                                            and discover secret spots that few tourists ever see.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination ">
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center xl:pt-[40px]">
+                        <div class="btn-custom">
+                            <a href="javascript:void(0);" aria-label="learn more" class="btn btn-green">
+                                learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- img-with-content-start-->
+        <section class="anim img-with-content-wrapper bg-Beige xl:pb-100 py-20 ">
+            <div class="container-fluid">
+                <div class="full-img overflow-hidden relative 1023:h-[1490px] 1400:h-[1300px] ">
+                    <img src="../assets/images/img-1.webp" class="h-full w-full object-cover" height="973" width="1432"
+                        alt="jolurny">
+                    <div class="blur-content">
+                        <div class="title title-white flex flex-col gap-[8px] mb-20 anim-up">
+                            <h2>
+                                Embark on an unforgettable journey with Hawaii Forest & Trail!
+                            </h2>
+                            <span class="sub-white big">
+                                An island of fire and ice that reminds us nothing is permanent and there is always time
+                                to
+                                slow down and take in the beauty.
+                            </span>
+                        </div>
+                        <div class="content white anim-up">
+                            <p>
+                                The Island of Hawaii offers endless adventures – a perfect fit for travelers who crave
+                                the
+                                authentic and dare to seek out the tallest mountains in the world, volcanic craters,
+                                hidden
+                                lava tubes, black sand beaches, and nature’s tropical waterfalls. Hawaii Forest & Trail
+                                has
+                                been the premier Big Island adventure tour service for more than 25 years.
+                            </p>
+                            <p>
+                                What continues to bring travelers back to Hawaii Forest & Trail is our team of highly
+                                knowledgeable Interpretive Guides, our unparalleled access to private land, and our
+                                intimate
+                                small group tour sizes. All that, paired with all the comforts you’d expect from a
+                                first-class tour company, our experiences are designed to keep you comfortable and
+                                captivated.   
+                            </p>
+                            <p>
+                                We invite you to be our guest and experience the best spots in Hawaii Nei!
+                            </p>
+                        </div>
+                        <div class="btn-custom mt-20 anim-up">
+                            <a href="javascript:void(0);" class="btn btn-transperent" aria-label="our story"
+                                role="link">
+                                our story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experince Style-1 Start -->
+        <section class="experinces-wrapper bg-Beige 1023:py-20 anim">
+            <div class="container-fluid">
+                <div class="experinces-inner py-60 xl:pl-[180px] md:pl-[60px] px-20 "
+                    style="background-image: url(../assets/images/experinces-1.webp);">
+                    <div class="flex flex-wrap justify-start 767:justify-center">
+                        <div class="experinces-content z-2 max-w-[304px] 767:text-center">
+                            <div class="title title-white flex flex-col gap-[8px] anim-up">
+                                <h2>
+                                    Custom Luxury EXPERIENCES
+                                </h2>
+                                <span class="sub-white big">
+                                    Expertly Curated Adventures Designed for You
+                                </span>
+                            </div>
+                            <div class="btn-custom mt-20 anim-up">
+                                <a href="javascript:void(0);" class="btn btn-apple_green" aria-label="Inquire Today!">
+                                    Inquire Today!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experince Style-2 Start -->
+        <section class="zigzag-wrapper hidden bg-Beige 1023:py-20 anim">
+            <div class="container-fluid">
+                <div class="zigzag-g-inner bg-green rounded-[28px] xl:px-100 px-20 xl:py-60 pt-60 pb-20">
+                    <div class="flex flex-wrap justify-between items-center 1023:gap-[40px] w-full">
+                        <div class="w-full lg:w-6/12 639:text-center">
+                            <div class="zigzag-content max-w-[550px]">
+                                <div class="title title-white flex flex-col gap-[8px]">
+                                    <h2>
+                                        Custom Luxury EXPERIENCES
+                                    </h2>
+                                    <span class="sub-white big">
+                                        Expertly Curated Adventures Designed for You
+                                    </span>
+                                </div>
+                                <div class="btn-custom mt-20">
+                                    <a href="javascript:void(0);" class="btn btn-apple_green"
+                                        aria-label="Inquire Today!">
+                                        Inquire Today!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-6/12">
+                            <div class="zigzag-img">
+                                <img src="../assets/images/experinces-1.webp"
+                                    class="border-Beige border-[4px] border-solid rounded-[20px]" height="356"
+                                    width="550" alt="experinces">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials-start -->
+        <section class="testimonial-wrapper bg-Beige xl:py-100 pt-20 pb-70">
+            <div class="container-fluid">
+                <div class="title title-chocolate text-center">
+                    <h2>
+                        Our Rave Reviews
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- traveler-start -->
+        <section class="traveler-wrapper bg-Beige py-40">
+            <div class="container-fluid">
+                <div class="traveler-container py-80"
+                    style="background-image: url(../assets/images/traveller-bg.webp);">
+                    <div class="container-fluid lg:!pl-0 1023:!px-0 max-w-full">
+                        <div
+                            class="flex flex-wrap items-center justify-between m-0 p-0 w-full relative 1023:gap-[40px]">
+                            <div class="w-full lg:w-7/12  lg:order-1 order-2 relative">
+                                <div dir="rtl" class="swiper traveler-slide">
+                                    <div class="swiper-wrapper lg:items-center">
+                                        <div dir="ltr" class="swiper-slide">
+                                            <div class="card bg-White rounded-[30px] overflow-hidden">
+                                                <div class="card-img ">
+                                                    <img src="../assets/images/traveller-2.webp"
+                                                        class="w-full  object-cover" width="440" height="242"
+                                                        alt="6-Hour Private">
+                                                </div>
+                                                <div class="card-info block p-20">
+                                                    <div class="title title-green">
+                                                        <h4>
+                                                            Palila Counts 2018 with Garry Dean
+                                                        </h4>
+                                                    </div>
+                                                    <div class="btn-custom mt-20 text-right">
+                                                        <a href="javascript:void(0);" aria-label="read more" role="link"
+                                                            class="btn btn-red">
+                                                            read more
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div dir="ltr" class="swiper-slide">
+                                            <div class="card bg-White rounded-[30px] overflow-hidden">
+                                                <div class="card-img ">
+                                                    <img src="../assets/images/traveller-1.webp"
+                                                        class="w-full object-cover" width="440" height="242"
+                                                        alt="6-Hour Private">
+                                                </div>
+                                                <div class="card-info block p-20">
+                                                    <div class="title title-green">
+                                                        <h4>
+                                                            Outplanting at Pu’u Wa’a wa’a
+                                                        </h4>
+                                                    </div>
+                                                    <div class="btn-custom mt-20 text-right">
+                                                        <a href="javascript:void(0);" aria-label="read more" role="link"
+                                                            class="btn btn-red">
+                                                            read more
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div dir="ltr" class="swiper-slide">
+                                            <div class="card bg-White rounded-[30px] overflow-hidden">
+                                                <div class="card-img ">
+                                                    <img src="../assets/images/traveller-2.webp"
+                                                        class="w-full  object-cover" width="440" height="248"
+                                                        alt="6-Hour Private">
+                                                </div>
+                                                <div class="card-info block p-20">
+                                                    <div class="title title-green">
+                                                        <h4>
+                                                            Palila Counts 2018 with Garry Dean
+                                                        </h4>
+                                                    </div>
+                                                    <div class="btn-custom mt-20 text-right">
+                                                        <a href="javascript:void(0);" aria-label="read more" role="link"
+                                                            class="btn btn-red">
+                                                            read more
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div dir="ltr" class="swiper-slide">
+                                            <div class="card bg-White rounded-[30px] overflow-hidden">
+                                                <div class="card-img ">
+                                                    <img src="../assets/images/traveller-1.webp"
+                                                        class="w-full object-cover" width="440" height="242"
+                                                        alt="6-Hour Private">
+                                                </div>
+                                                <div class="card-info block p-20">
+                                                    <div class="title title-green">
+                                                        <h4>
+                                                            Outplanting at Pu’u Wa’a wa’a
+                                                        </h4>
+                                                    </div>
+                                                    <div class="btn-custom mt-20 text-right">
+                                                        <a href="javascript:void(0);" aria-label="read more" role="link"
+                                                            class="btn btn-red">
+                                                            read more
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:!hidden swiper-pagination">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-navigation 1023:!hidden">
+                                <div class="swiper-button-prev inset-0 relative block !opacity-100 !h-[40px] !w-[40px]"
+                                    tabindex="0" role="button" aria-label="Previous slide">
+                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1.63599" width="38" height="38" rx="19" stroke="#FEFEFE"
+                                            stroke-width="2" />
+                                        <g clip-path="url(#clip0_693_24478)">
+                                            <path
+                                                d="M14.7096 19.6457L23.3093 11.0463C23.8564 10.499 24.7433 10.499 25.2901 11.0463C25.8369 11.5931 25.8369 12.48 25.2901 13.0268L17.6807 20.636L25.2899 28.2449C25.8367 28.792 25.8367 29.6788 25.2899 30.2256C24.743 30.7726 23.8561 30.7726 23.3091 30.2256L14.7094 21.626C14.436 21.3525 14.2994 20.9943 14.2994 20.636C14.2994 20.2775 14.4362 19.9191 14.7096 19.6457Z"
+                                                fill="#FEFEFE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_693_24478">
+                                                <rect width="20" height="20" fill="white"
+                                                    transform="translate(30 10.636) rotate(90)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next inset-0 relative block !opacity-100 !h-[40px] !w-[40px]"
+                                    tabindex="0" role="button" aria-label="Next slide">
+                                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="39" y="39.636" width="38" height="38" rx="19"
+                                            transform="rotate(-180 39 39.636)" stroke="#FEFEFE" stroke-width="2" />
+                                        <g clip-path="url(#clip0_693_24482)">
+                                            <path
+                                                d="M25.2904 21.6262L16.6907 30.2257C16.1436 30.773 15.2567 30.773 14.7099 30.2257C14.1631 29.6788 14.1631 28.792 14.7099 28.2452L22.3193 20.636L14.7101 13.0271C14.1633 12.48 14.1633 11.5932 14.7101 11.0464C15.257 10.4993 16.1439 10.4993 16.6909 11.0464L25.2906 19.646C25.564 19.9195 25.7006 20.2776 25.7006 20.6359C25.7006 20.9944 25.5638 21.3528 25.2904 21.6262Z"
+                                                fill="#FEFEFE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_693_24482">
+                                                <rect width="20" height="20" fill="white"
+                                                    transform="translate(10 30.636) rotate(-90)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-5/12  lg::order-2 order-1 lg:pl-40 xl:pl-[65px] 1023:text-center">
+                                <div class="1023:container-fluid">
+                                    <div class="title title-white">
+                                        <h2>Seek Like A Traveler, Adventure Like A Native</h2>
+                                    </div>
+                                    <div class="content white">
+                                        <p>We've crafted excellent blog posts catered to parents, covering various
+                                            aspects of
+                                            sleep.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- brand-start -->
+        <section class="brand-wrapper bg-Moss_Green pt-60 pb-40">
+            <div class="swiper brand-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-1.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-1" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-2.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-2" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-3.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-3" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-4.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-4" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-5.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-5" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-6.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-6" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-7.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-7" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-8.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-8" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-9.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-9" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-10.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-10" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../assets/images/brand-11.svg" height="48" loading="lazy"
+                                    class="max-w-full block mx-auto" alt="brand-11" data-loaded="true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- insta-feed-start -->
+        <section class="instafeed-wrapper relative py-40">
+            <div class="instafeed-inner absolute top-0 left-0 z-1_minus h-full w-full ">
+                <img src="../assets/images/Instagram Feed.webp" class="h-full w-full object-cover"
+                    alt="instafeed-pattern">
+            </div>
+            <div class="container-fluid">
+                <div class="flex flex-wrap justify-center items-center gap-[40px]">
+                    <div class="w-full lg:w-11/12">
+                        <div class="flex flex-col justify-center items-center">
+                            <div class="title title-chocolate">
+                                <h2>
+                                    @hawaiiforest
+                                </h2>
+                            </div>
+                            <div class="btn-custom">
+                                <a href="javascript:void(0);" class="btn btn-chocolate" aria-label="follow us"
+                                    role="button">
+                                    follow us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer-start -->
+    <footer id="footer" class="footer bg-Chocolate md:px-40">
+        <div class="container-fluid">
+            <div class="footer-top lg:py-50 py-40">
+                <div class="flex flex-wrap justify-center md:justify-between w-full gap-[40px]">
+                    <div class="flex flex-col justify-center md:justify-start gap-[20px] ">
+                        <div class="title title-white 767:text-center">
+                            <h3>
+                                Begin Your Adventure, Today!
+                            </h3>
+                            <span class="sub-white">
+                                Join our newsletter to keep up with our latest tours, offerings, and events!
+                            </span>
+                        </div>
+                        <div class="newsletter-form">
+                            <div class="subscribe-wrapper flex gap-[16px] 767:justify-center">
+                                <label for="email"
+                                    class="px-20 py-10 bg-transparent border-White border-[2px] border-solid rounded-[150px]">
+                                    <input type="email" name="email"
+                                        class="subscribe-input lg:w-[269px] border-0 h-full font-museo bg-transparent text-White"
+                                        placeholder="Enter your email">
+                                </label>
+                                <a href="javascript:void(0);" class="btn btn-transperent submit-btn">
+                                    Subscribe
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-row flex-col 767:items-center justify-center md:gap-[80px] gap-[20px]">
+                        <div class="footer-menu">
+                            <div
+                                class="title 767:cursor-pointer title-white flex flex-wrap 767:justify-center gap-[20px] mb-10">
+                                <h4>
+                                    Our Policies
+                                </h4>
+                                <img class="dropdown-icon md:hidden" src="../assets/images/arrow-up.svg"
+                                    alt="footer-menu">
+                            </div>
+                            <div class="footer-dropdown">
+                                <ul role="list">
+                                    <li>
+                                        <a href="#" aria-label="Reservation policy" role="link">
+                                            Reservation Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Health & safety Policy" role="link">
+                                            Health & Safety Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Participant Agreement" role="link">
+                                            Participant Agreement
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div
+                                class="title 767:cursor-pointer title-white flex flex-wrap 767:justify-center gap-[20px] mb-10">
+                                <h4>
+                                    Our Company
+                                </h4>
+                                <img class="dropdown-icon md:hidden" src="../assets/images/arrow-up.svg"
+                                    alt="footer-menu">
+                            </div>
+                            <div class="footer-dropdown">
+                                <ul role="list">
+                                    <li>
+                                        <a href="#" aria-label="press room" role="link">
+                                            Press Room
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="careers" role="link">
+                                            Careers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="out Partners" role="link">
+                                            Our Partners
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div
+                                class="title 767:cursor-pointer title-white flex flex-wrap 767:justify-center gap-[20px] mb-10">
+                                <h4>
+                                    About us
+                                </h4>
+                                <img class="dropdown-icon md:hidden" src="../assets/images/arrow-up.svg"
+                                    alt="footer-menu">
+                            </div>
+                            <div class="footer-dropdown">
+                                <ul role="list">
+                                    <li>
+                                        <a href="#" aria-label="our story" role="link">
+                                            Our Story
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="our guides" role="link">
+                                            Our Guides
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="blog" role="link">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="faq" role="link">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom border-0 border-t-2 border-t-light_grey border-solid w-full py-20 479:px-40">
+                <div class="flex flex-wrap 767:flex-col-reverse justify-between w-full items-center gap-[20px]">
+                    <div class="copy-right content white">
+                        <p>
+                            © 2024 Hawaii Forest & Trail
+                        </p>
+                    </div>
+                    <div class="social-media">
+                        <ul role="list" class="flex flex-wrap justify-center gap-[20px]">
+                            <li>
+                                <a href="javascript:void(0);" role="link" target="_blank"
+                                    class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                                    <img class="social-icon" src="../assets/images/mail.svg" alt="mail" class="lozad"
+                                        data-loaded="true">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" role="link" target="_blank"
+                                    class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                                    <img class="social-icon" src="../assets/images/insta.svg" alt="insta" class="lozad"
+                                        data-loaded="true">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" role="link" target="_blank"
+                                    class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                                    <img class="social-icon" src="../assets/images/facebook.svg" alt="facebook"
+                                        class="lozad" data-loaded="true">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" role="link" target="_blank"
+                                    class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                                    <img class="social-icon" src="../assets/images/tiktok.svg" alt="tiktok"
+                                        class="lozad" data-loaded="true">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" role="link" target="_blank"
+                                    class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                                    <img class="social-icon" src="../assets/images/twiiter.svg" alt="twitter"
+                                        class="lozad" data-loaded="true">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" role="link" target="_blank"
+                                    class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                                    <img class="social-icon" src="../assets/images/yelp.svg" alt="yelp" class="lozad"
+                                        data-loaded="true">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" role="link" target="_blank"
+                                    class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                                    <img class="social-icon" src="../assets/images/you-tube.svg" alt="youtube"
+                                        class="lozad" data-loaded="true">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" role="link" target="_blank"
+                                    class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                                    <img class="social-icon" src="../assets/images/linkdin.svg" alt="linkdin"
+                                        class="lozad" data-loaded="true">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+<script src="../assets/js/script.js"></script>
+
+</html>
