@@ -177,7 +177,9 @@ module.exports = {
             'banner_big_gradient': 'linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 65.96%)',
             'explore_gradient': 'linear-gradient(90deg, rgba(112, 112, 112, 0) 26.69%, rgba(10, 10, 10, 0.8) 44.2%)',
             'explore_gradient_mobile': 'linear-gradient(180deg, rgba(112, 112, 112, 0) 26.69%, rgba(10, 10, 10, 0.8) 44.2%)',
+            'aboutoverlay' :'linear-gradient(180deg, rgba(0, 0, 0, 0) 45.83%, rgba(0, 0, 0, 0.8) 73.77%)',
         }),
+
 
 
         borderRadius: {
