@@ -122,6 +122,96 @@ $(document).ready(function ($) {
             );
         });
     }
+
+    // card-grid-slider 
+    if ($('.card-grid-wrapper').length) {
+        var traveler_slider = new Swiper(".card_grid-slider", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: false,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+            // effect: "fade",
+            speed: 2500,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: '1.25',
+                },
+                640: {
+                    slidesPerView: '2.25',
+                },
+                768: {
+                    slidesPerView: '3.25',
+                },
+                1024: {
+                    slidesPerView: '4',
+                },
+                1200: {
+                    slidesPerView: '5',
+                },
+                1600: {
+                    slidesPerView: '5',
+                }
+            },
+        });
+    }
+
+    gsap.utils.toArray(".grid-details").forEach(card => {
+
+        // Select elements relative to each card
+        let q = gsap.utils.selector(card);
+
+        // Set initial opacity, y position, and visibility of content (hidden initially)
+        gsap.set(q('.content'), { autoAlpha: 0, y: 20 });
+
+        // Hover effect: content slides up and fades in, title has a subtle effect
+        card.addEventListener("mouseover", () => {
+            // Content animation (slide-up and fade-in)
+            gsap.to(q('.content'), {
+                duration: 0.4,
+                autoAlpha: 1,
+                y: 0,
+                ease: "power2.out",
+                display: 'block'
+            });
+
+            // Title animation (could be color change, slight move, etc.)
+            gsap.to(q('.grid-details'), {
+                duration: 0.4,
+                autoAlpha: 1,
+                y: 0,  // Slight move upward
+                color: "#ff6347",  // Change color on hover
+                ease: "power2.out"
+            });
+        });
+
+        // Hide content on mouse leave, title transitions back
+        card.addEventListener("mouseleave", () => {
+            // Content animation (slide-down and fade-out)
+            gsap.to(q('.content'), {
+                duration: 0.4,
+                autoAlpha: 0,
+                y: 20,
+                ease: "power2.in",
+                onComplete: () => gsap.set(q('.content'), { display: 'none' })
+            });
+
+            // Title transitions back to original state
+            gsap.to(q('.grid-details'), {
+                duration: 0.4,
+                autoAlpha: 1,
+                y: 20,  // Move back to original position
+                color: "#000",  // Return to original color
+                ease: "power2.in"
+            });
+        });
+    });
+
+
     // map
     if ($('.location-wrapper').length) {
         $('.small-station').each(function () {
@@ -152,8 +242,8 @@ $(document).ready(function ($) {
             slidesPerView: 1,
             spaceBetween: 0,
             loop: true,
-            centeredSlides:true,
-            centeredSlidesBounds:true,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
             // effect: "fade",
             speed: 2500,
             pagination: {
@@ -229,9 +319,8 @@ $(document).ready(function ($) {
             slidesPerView: '1',
             spaceBetween: 0,
             loop: false,
-
-            centeredSlides:true,
-            centeredSlidesBounds:true,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
             speed: 2000,
             // autoplay: {
             //     delay: 0,
@@ -274,8 +363,8 @@ $(document).ready(function ($) {
             slidesPerView: 1,
             spaceBetween: 28,
             loop: true,
-            centeredSlides:true,
-            centeredSlidesBounds:true,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
             // effect: "fade",
             speed: 2500,
             navigation: {
@@ -303,16 +392,16 @@ $(document).ready(function ($) {
                 },
                 1024: {
                     slidesPerView: '1.85',
-                    centeredSlides:false,
+                    centeredSlides: false,
 
                 },
                 1200: {
                     slidesPerView: '1.85',
-                    centeredSlides:false,
+                    centeredSlides: false,
                 },
                 1600: {
                     slidesPerView: '1.85',
-                    centeredSlides:false,
+                    centeredSlides: false,
                 }
             },
         });
@@ -326,9 +415,9 @@ $(document).ready(function ($) {
             spaceBetween: 0,
             speed: 2000,
             loop: false,
-            grabCursor:true,
-            centeredSlides:true,
-            centeredSlidesBounds:true,
+            grabCursor: true,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true
@@ -363,78 +452,6 @@ $(document).ready(function ($) {
         });
     }
 
-    // if ($('.grid-box-wrapper').length) {
-    //     var aboutslide;
-
-    //     function initSwiper() {
-    //         var screenWidth = window.innerWidth;
-
-    //         var slidesPerView = screenWidth >= 1024 ? 4 : 2;
-
-    //         if (aboutslide) {
-    //             aboutslide.destroy();
-    //         }
-    //         aboutslide = new Swiper('.about-slider', {
-    //             slidesPerView: slidesPerView,
-    //             pagination: {
-    //                 el: '.swiper-pagination',
-    //                 clickable: true,
-    //             },
-    //             loop: false,
-    //             // effect: 'coverflow',
-    //             grabCursor: true,
-    //             spaceBetween: 0,
-    //             breakpoints: {
-    //                 1200: {
-    //                     slidesPerView: 4,
-    //                     spaceBetween: 40,
-    //                     coverflowEffect: false,
-    //                 },
-
-    //                 1024: {
-    //                     slidesPerView: 3.5,
-    //                     spaceBetween: 20,
-    //                     coverflowEffect: false,
-    //                     // loop: true,
-    //                 },
-    //                 768: {
-    //                     slidesPerView: 2.5,
-    //                     spaceBetween: 20,
-    //                     // loop: true,
-    //                     coverflowEffect: false,
-    //                 },
-    //                 640: {
-    //                     slidesPerView: 2.5,
-    //                     spaceBetween: 10,
-    //                     // loop: true,
-    //                     coverflowEffect: false,
-    //                 },
-    //                 378: {
-    //                     slidesPerView: 1.5,
-    //                     // loop: true,
-    //                     spaceBetween: 10,
-    //                     coverflowEffect: false,
-    //                 },
-    //                 320: {
-    //                     slidesPerView: 1.5,
-    //                     spaceBetween: 10,
-    //                     // loop: true,
-    //                     coverflowEffect: false,
-    //                 },
-    //             },
-    //         });
-    //     }
-
-    //     // Initialize Swiper on page load
-    //     window.addEventListener('load', function () {
-    //         initSwiper();
-    //     });
-
-    //     // Reinitialize Swiper on window resize
-    //     window.addEventListener('resize', function () {
-    //         initSwiper();
-    //     });
-    // }
 
     // highlights slider
     if ($('.highlights-wrapper').length) {
@@ -443,9 +460,9 @@ $(document).ready(function ($) {
             slidesPerView: '1',
             spaceBetween: 28,
             loop: true,
-            grabCursor:true,
-            centeredSlides:true,
-            centeredSlidesBounds:true,
+            grabCursor: true,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
             speed: 2000,
             loop: false,
             // autoplay: {
@@ -490,7 +507,21 @@ $(document).ready(function ($) {
         });
     }
 
+    // bookig-tab
+    $('.tabs-nav li:first-child').addClass('active');
+    $('.tab-content').hide();
+    $('.tab-content:first').show();
 
+    // Click function
+    $('.tabs-nav li').click(function () {
+        $('.tabs-nav li').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-content').hide();
+
+        var activeTab = $(this).find('a').attr('href');
+        $(activeTab).show();
+        return false;
+    });
 
 });
 
@@ -519,38 +550,38 @@ $(document).ready(function ($) {
 
     $(".anim").each(function () {
         let section = $(this);
-        gsap.fromTo(section.find(".anim-img"), 
-        {
-            clipPath: 'inset(0 100% 0 0)'
-        }, 
-        {
-            clipPath: 'inset(0 0% 0 0)',
-            duration: 0.3,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: section,
-                scrub: false,
-                start: "top 50%",
-            }
-        });
+        gsap.fromTo(section.find(".anim-img"),
+            {
+                clipPath: 'inset(0 100% 0 0)'
+            },
+            {
+                clipPath: 'inset(0 0% 0 0)',
+                duration: 0.3,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: section,
+                    scrub: false,
+                    start: "top 50%",
+                }
+            });
 
         // Animate the content
-        gsap.fromTo(section.find(".anim-up"), 
-        {
-            opacity: 0,
-            y: 30
-        }, 
-        {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: section,
-                scrub: false,
-                start: "top 50%",
-            }
-        });
+        gsap.fromTo(section.find(".anim-up"),
+            {
+                opacity: 0,
+                y: 30
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: section,
+                    scrub: false,
+                    start: "top 50%",
+                }
+            });
     });
 });
 
