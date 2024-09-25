@@ -965,8 +965,23 @@
     @apply transition-all duration-300 delay-100;
   }
 
-
-
+  /* booking-tabbing-start */
+  .booking-wrapper .nav-item.active{
+    @apply bg-green ;
+  }
+  .booking-wrapper .nav-item.active a{
+    @apply text-White
+  }
+  .booking-wrapper .nav-item{
+    @apply px-20 py-10  rounded-[150px] ;
+  }
+  .booking-wrapper .nav-item a{
+    @apply text-green
+  }
+  .booking-wrapper .tab-content img {
+    object-position: 65%;
+  }
+  
 
   /* footer-start */
   .footer .footer-dropdown ul {

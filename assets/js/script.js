@@ -415,7 +415,6 @@ $(document).ready(function ($) {
             spaceBetween: 0,
             speed: 2000,
             loop: false,
-            grabCursor: true,
             centeredSlides: true,
             centeredSlidesBounds: true,
             pagination: {
@@ -508,19 +507,29 @@ $(document).ready(function ($) {
     }
 
     // bookig-tab
-    $('.tabs-nav li:first-child').addClass('active');
+    $('.tabs-nav .nav-item:first-child').addClass('active');
     $('.tab-content').hide();
     $('.tab-content:first').show();
-
-    // Click function
-    $('.tabs-nav li').click(function () {
-        $('.tabs-nav li').removeClass('active');
-        $(this).addClass('active');
-        $('.tab-content').hide();
-
-        var activeTab = $(this).find('a').attr('href');
-        $(activeTab).show();
-        return false;
+    
+    $('.tabs-nav .nav-item').click(function () {
+        // Check if the clicked nav-item already has the 'active' class
+        if (!$(this).hasClass('active')) {
+            // Remove 'active' class from all nav-items
+            $('.tabs-nav .nav-item').removeClass('active');
+    
+            // Add 'active' class to the clicked nav-item
+            $(this).addClass('active');
+    
+            // Hide all tab contents
+            $('.tab-content').hide();
+    
+            // Get the href attribute of the clicked nav-item to target the related content
+            var activeTab = $(this).find('a').attr('href');
+            
+            // Show the related tab content
+            $(activeTab).show();
+        }
+        return false; // Prevent default anchor behavior
     });
 
 });
