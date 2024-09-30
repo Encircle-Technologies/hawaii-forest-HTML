@@ -507,28 +507,18 @@ $(document).ready(function ($) {
     }
 
     // bookig-tab
-    $('.tabs-nav .nav-item:first-child').addClass('active');
+    $('.tabs-nav li:first-child').addClass('active');
     $('.tab-content').hide();
     $('.tab-content:first').show();
-    
-    $('.tabs-nav .btn').click(function () {
-        // Check if the clicked nav-item already has the 'active' class
-        if (!$('.nav-item').hasClass('active')) {
-            // Remove 'active' class from all nav-items
-            $('.nav-item').removeClass('active');
-    
-            // Add 'active' class to the clicked nav-item
-            $(this).addClass('active');
-    
-            // Hide all tab contents
-            $('.tab-content').hide();
-    
-            // Get the href attribute of the clicked nav-item to target the related content
-            var activeTab = $(this).find('a').attr('href');
-            
-            // Show the related tab content
-            $(activeTab).show();
-        }
+
+    // Click function
+    $('.tabs-nav li').click(function () {
+        $('.tabs-nav li').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-content').hide();
+
+        var activeTab = $(this).find('a').attr('href');
+        $(activeTab).show();
         return false;
     });
 
