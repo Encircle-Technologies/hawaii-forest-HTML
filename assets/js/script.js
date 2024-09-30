@@ -511,11 +511,11 @@ $(document).ready(function ($) {
     $('.tab-content').hide();
     $('.tab-content:first').show();
     
-    $('.tabs-nav .nav-item').click(function () {
+    $('.tabs-nav .btn').click(function () {
         // Check if the clicked nav-item already has the 'active' class
-        if (!$(this).hasClass('active')) {
+        if (!$('.nav-item').hasClass('active')) {
             // Remove 'active' class from all nav-items
-            $('.tabs-nav .nav-item').removeClass('active');
+            $('.nav-item').removeClass('active');
     
             // Add 'active' class to the clicked nav-item
             $(this).addClass('active');
@@ -529,7 +529,7 @@ $(document).ready(function ($) {
             // Show the related tab content
             $(activeTab).show();
         }
-        return false; // Prevent default anchor behavior
+        return false;
     });
 
 });

@@ -205,6 +205,9 @@
   .container-fluid {
     @apply px-20 lg:px-40 xl3:max-w-screen-2xl w-full mx-auto;
   }
+  .container-fuild-big{
+    @apply px-20 lg:px-100 xl3:max-w-[1312px] w-full mx-auto
+  }
 
   .swiper-button-prev::after,
   .swiper-button-next::after {
@@ -965,6 +968,11 @@
     @apply transition-all duration-300 delay-100;
   }
 
+  /* information-start */
+  .information-warpper .title h4 span{
+    @apply text-40 leading-[50.44px];
+  }
+
   /* booking-tabbing-start */
   .booking-wrapper .nav-item.active{
     @apply bg-green ;
@@ -981,6 +989,8 @@
   .booking-wrapper .tab-content img {
     object-position: 65%;
   }
+
+
   
 
   /* footer-start */
