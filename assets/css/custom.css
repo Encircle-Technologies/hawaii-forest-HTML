@@ -1,12 +1,31 @@
 .overview-zigzag_wrapper .overview-top_content .taxes-content span {
-  @apply italic text-16 leading-[19.2px] text-Font;
+  @apply italic text-16 leading-[19.2px] text-Font 1023:text-12 1023:leading-[14.4px];
 }
 .overview-zigzag_wrapper .overview-top_content .cancellation-txt img {
   @apply w-[24px] h-[24px] object-contain;
 }
 .overview-zigzag_wrapper .overview-top_content .cancellation-txt h5 {
-  @apply font-400;
+  @apply font-400 1023:text-12 1023:leading-[14.4px];
 }
 .overview-zigzag_wrapper .details_list ul li {
   @apply flex gap-[4px];
+}
+.overview-zigzag_wrapper .ticket-pricing h3 span {
+  @apply text-24 leading-30 lg:text-32 lg:leading-40;
+}
+.overview-zigzag_wrapper .ticket-pricing h3 {
+  @apply 1023:text-32 1023:leading-40
+}
+.overview-zigzag_wrapper .zigzag-right_video::before {
+  @apply content-[''] absolute top-0 left-0 bg-Black bg-opacity-20 w-full h-full z-1 rounded-[20px];
+}
+.overview-zigzag_wrapper .overview-bottom_content ul li {
+  @apply flex items-center gap-[20px];
+}
+.overview-zigzag_wrapper .overview-bottom_content ul li .img_vector {
+  @apply w-[40px] h-[40px] rounded-[999px] flex justify-center items-center;
+  box-shadow: 2px 2px 0px 0px #322E2C;
+}
+.overview-zigzag_wrapper .overview-bottom_content ul li .content p {
+  @apply text-White;
 }

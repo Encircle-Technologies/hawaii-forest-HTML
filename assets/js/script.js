@@ -278,8 +278,9 @@ $(document).ready(function ($) {
         var brand_slide = new Swiper('.brand-slide', {
             allowTouchMove: false,
             slidesPerView: '1',
+            slidesPerGroup: 2.5,
             spaceBetween: 60,
-            speed: 2000,
+            speed: 10000,
             loop: true,
             centeredSlides: false,
             autoplay: {
@@ -522,6 +523,99 @@ $(document).ready(function ($) {
         return false;
     });
 
+    //faq
+    // Function to toggle accordion items
+    function toggleAccordion($this) {
+        var $content = $this.siblings(".accordion-content");
+        var $plusIcon = $this.find(".arrow-down");
+        var $minusIcon = $this.find(".arrow-up");
+
+        if ($this.hasClass("active")) {
+            $this.removeClass("active");
+            $content.slideUp(200);
+            $plusIcon.show();
+            $minusIcon.hide();
+        } else {
+            $(".accordion-item > a").removeClass("active").find(".arrow-down").show().siblings(".arrow-up").hide();
+            $(".accordion-content").slideUp(200);
+
+            $this.addClass("active");
+            $content.slideDown(200);
+            $plusIcon.hide();
+            $minusIcon.show();
+        }
+    }
+
+    $(".accordion-item > a").on("click", function (e) {
+        e.preventDefault(); // Prevent the default action of the link
+        toggleAccordion($(this));
+    });
+
+    // Initialize: Hide all minus icons, show first accordion item
+    $(".arrow-up").hide();
+    $(".accordion-content").slideUp(200);
+    var $firstAccordion = $(".accordion-item:first > a");
+    $firstAccordion.addClass("active").siblings(".accordion-content").slideDown(200);
+    $firstAccordion.find(".arrow-down").hide().siblings(".arrow-up").show();
+
+
+    //gallary
+    if ($('.gallary-wrapper').length) {
+        var review_slider = new Swiper('.gallary-slider', {
+            slidesPerView: '1',
+            spaceBetween: 20,
+            loop: false,
+            grabCursor: true,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
+            speed: 2000,
+            // autoplay: {
+            //     delay: 0,
+            //     disableOnInteraction: true,
+            // },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: '1.25',
+                    spaceBetween: 20,
+                    centeredSlides: true,
+                },
+                440: {
+                    slidesPerView: '1.5',
+                    spaceBetween: 20,
+                    centeredSlides: true,
+                },
+                640: {
+                    slidesPerView: '1.5',
+                    spaceBetween: 20,
+                    centeredSlides: true,
+                },
+                768: {
+                    slidesPerView: '2.5',
+                    spaceBetween: 20,
+                    centeredSlides: true,
+                },
+                1024: {
+                    slidesPerView: '4',
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: '4',
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                },
+                1600: {
+                    slidesPerView: '4',
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                }
+            },
+        });
+    }
+
 });
 
 $(document).ready(function ($) {
@@ -658,4 +752,34 @@ $(document).ready(function ($) {
     };
 
 })($);
-// Responsive menu end
+// Responsive menu 
+
+if (document.querySelectorAll(".overview-bottom_content").length) {
+  const video = document.getElementById("bettervideo");
+  const circlePlayButton = document.getElementById("circle-play-b");
+
+  function togglePlay() {
+    if (video.paused || video.ended) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  }
+
+  circlePlayButton.addEventListener("click", togglePlay);
+
+  circlePlayButton.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      togglePlay();
+    }
+  });
+
+  video.addEventListener("playing", function () {
+    circlePlayButton.style.opacity = 0;
+  });
+
+  video.addEventListener("pause", function () {
+    circlePlayButton.style.opacity = 1;
+  });
+}
+

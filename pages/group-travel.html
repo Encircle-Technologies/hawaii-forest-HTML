@@ -44,7 +44,7 @@
       Content</a>
   <a href="#footer" role="button" tabindex="-1" class="skip-link absolute top-0 left-[-50%]">Skip to Footer</a>
 
-  <header class="header">
+  <!-- <header class="header">
       <div class="announcement-wrapper bg-green xl:h-[82px]">
           <div class="xl:px-40 xl3:px-0 px-30 xl3:max-w-screen-2xl mx-auto 1199:py-[14px] py-20">
               <div class="flex flex-wrap items-center justify-center m-0 p-0 w-full relative">
@@ -281,7 +281,7 @@
               </nav>
           </div>
       </div>
-  </header>
+  </header> -->
 
       <!-- small-banner -->
       <section class="banner banner-sm relative bg-Beige pt-40 anim">
@@ -302,10 +302,10 @@
     </section>
 
     <!--overview zigzag-->
-    <section class="overview-zigzag_wrapper py-60">
+    <section class="overview-zigzag_wrapper py-60 bg-Beige">
       <div class="container-fluid-lg">
-        <div class="overview-top_content flex flex-wrap lg:flex-nowrap border-0 border-b-2 border-Chocolate border-solid">
-          <div class="overview-top_left text-center lg:text-left pb-20 lg:pr-55 border-0 lg:border-r-2 1023:border-b-2 border-Chocolate border-solid">
+        <div class="overview-top_content flex flex-wrap lg:flex-nowrap 1023:flex-col border-0 border-b-2 border-Chocolate border-solid">
+          <div class="overview-top_left text-center lg:text-left pb-20 pr-0 lg:pr-20 xxl:pr-55 border-0 lg:border-r-2 1023:border-b-2 border-Chocolate border-solid">
             <div class="ticket-pricing">
               <h3 class="uppercase font-amatic text-green"><span>Adults</span> starting at $229 <br>
                 <span>Children</span> starting at $204</h3>
@@ -313,18 +313,18 @@
             <div class="taxes-content mt-10">
               <span>Taxes + fees not applied</span>
             </div>
-            <div class="cancellation-txt mt-[12px] flex items-center gap-[4px]">
+            <div class="cancellation-txt mt-[12px] flex items-center 1023:justify-center gap-[4px]">
               <img src="../assets/images/free-logo.png" alt="free-logo" width="24" height="24" />
               <h5>Free Cancellations up to 24 hours before tour time</h5>
             </div>
           </div>
-          <div class="overview-top_right pb-20 lg:pl-55 flex-1">
-            <div class="overview-top_inner flex flex-wrap lg:flex-nowrap justify-between px-20 gap-[20px] items-center h-full">
+          <div class="overview-top_right py-20 lg:pt-0 pb-20 pl-0 lg:pl-20 xxl:pl-55 flex-1">
+            <div class="overview-top_inner flex flex-wrap justify-between 1023:justify-center lg:px-20 gap-[20px] items-center h-full">
               <div class="title text-left 1023:text-center 1023:w-full">
                 <h3 class="uppercase">Details</h3>
               </div>
               <div class="details_list">
-                <ul class="grid grid-cols-2 lg:grid-cols-3 gap-[20px]">
+                <ul class="grid grid-cols-2 lg:grid-cols-3 gap-[20px] gap-x-[20px] lg:gap-x-[30px] xxl:gap-x-[70px]">
                   <li>
                     <img src="../assets/images/clock.png" width="20" height="20" alt="clock" />
                     <p>12 hrs</p>
@@ -352,6 +352,163 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="overview-middle_content pt-60 pb-40">
+          <div class="overview-zigzag gap-[20px] lg:gap-[40px] xxl:gap-[100px] flex 1023:flex-wrap">
+            <div class="w-full lg:w-6/12">
+              <div class="left_content">
+                <div class="title">
+                  <h2 class="text-Chocolate">Overview</h2>
+                </div>
+                <div class="content mt-20">
+                  <p>An in-depth volcano experience on the Island of Hawaii is offered by Hawaii Forest & Trail. Your National Park Certified Guide will share a mix of natural and cultural history about the island's formation, illuminating the stories behind the ever-changing landscape of our island home. Join us for the opportunity of a lifetime to visit Hawaii Volcanoes National Park and experience Kilauea Volcano in a way never seen before!</p>
+                </div>
+                <div class="zigzag-left_img max-w-[495px] mx-auto mt-20">
+                  <img src="../assets/images/zigzag-Map.png" class="img-fluid" alt="zigzag-Map" width="495" height="523" />
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12">
+              <div class="calender-widget title">
+                <h2>add calender here</h2>
+              </div>
+              <div class="zigzag-right_video relative mt-20 lg:mt-40">
+                    <div class="video-with-text-link relative h-full pt-[62.16%]" id="video-container">
+                      <video
+                        id="bettervideo"
+                        class="w-full h-full object-cover absolute rounded-[20px] top-0 left-0 focus-inset"
+                        poster="../assets/images/video_poster.jpg"
+                        webkit-playsinline
+                        playsinline
+                        loop
+                        preload
+                        aria-label="Video about"
+                      >
+                        <source src="../assets/images/zigzag-video.mov">
+                      </video>
+                    </div>
+                  <div class="play-button-wrapper">
+                    <div
+                      title="Play video"
+                      class="play-gif popup_playbtn cursor-pointer z-2 absolute w-[48px] h-[48px] top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] flex justify-center items-center bg-black rounded-full"
+                      id="circle-play-b"
+                      tabindex="0"
+                      role="button"
+                      aria-controls="play video"
+                      aria-label="Play video"
+                      title="Play video"
+                    >
+                      <svg
+                        class="w-[30px] h-[30px] lg:w-[36px]"
+                        width="36"
+                        height="40"
+                        viewBox="0 0 36 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M34.9799 18.256L2.97999 0.256076C2.35999 -0.091923 1.60399 -0.0839231 0.991997 0.272076C0.375999 0.632075 0 1.28807 0 2.00007V38C0 38.712 0.375999 39.368 0.991997 39.728C1.304 39.908 1.65199 40 1.99999 40C2.33599 40 2.67599 39.916 2.97999 39.744L34.9799 21.744C35.6079 21.388 35.9999 20.724 35.9999 20C35.9999 19.276 35.6079 18.612 34.9799 18.256Z" fill="white"/>
+                      </svg>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overview-bottom_content flex justify-between bg-Moss_Green p-20">
+          <div class="overview-bottom_left px-20">
+            <div class="title title-white">
+              <h3>Gear Provided</h3>
+            </div>
+            <ul class="grid grid-cols-3 gap-[28px] mt-40">
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Walking sticks</p>
+                </div>
+              </li>
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Day Packs</p>
+                </div>
+              </li>
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Bug Repellant</p>
+                </div>
+              </li>
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Flashlights</p>
+                </div>
+              </li>
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Rain gear</p>
+                </div>
+              </li>
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Sunscreen</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="overview-bottom_right px-20">
+            <div class="title title-white">
+              <h3>What to Bring & Wear</h3>
+            </div>
+            <ul class="grid grid-cols-3 gap-[28px] mt-40">
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Walking sticks</p>
+                </div>
+              </li>
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Day Packs</p>
+                </div>
+              </li>
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Bug Repellant</p>
+                </div>
+              </li>
+              <li>
+                <div class="img_vector">
+                  <img src="../assets/images/stick.png" width="40" height="40" alt="stick" />
+                </div>
+                <div class="content">
+                  <p>Flashlights</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

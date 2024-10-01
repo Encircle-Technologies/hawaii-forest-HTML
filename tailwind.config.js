@@ -143,7 +143,8 @@ module.exports = {
             20: '20px',
             22: '22px', 
             24: '24px', 
-            26: '26px', 
+            26: '26px',
+            30: '30px', 
             32: '32px',
             34: '34px', 
             38: '38px', 
@@ -178,7 +179,9 @@ module.exports = {
             'explore_gradient': 'linear-gradient(90deg, rgba(112, 112, 112, 0) 26.69%, rgba(10, 10, 10, 0.8) 44.2%)',
             'explore_gradient_mobile': 'linear-gradient(180deg, rgba(112, 112, 112, 0) 26.69%, rgba(10, 10, 10, 0.8) 44.2%)',
             'aboutoverlay' :'linear-gradient(180deg, rgba(0, 0, 0, 0) 45.83%, rgba(0, 0, 0, 0.8) 73.77%)',
+            'gallery_btn': 'linear-gradient(270deg, rgba(0, 0, 0, 0.6) -121.88%, rgba(0, 0, 0, 0.24) -101.44%, rgba(0, 0, 0, 0) -8.94%, rgba(0, 0, 0, 0.24) 69.24%)',
         }),
+
 
 
 

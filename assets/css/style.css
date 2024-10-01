@@ -324,6 +324,10 @@
     content: '';
     @apply absolute top-[5px] left-0 w-[10px] h-[10px] bg-White rounded-100;
   }
+
+  .img-fluid {
+    @apply h-full w-full object-cover block;
+  }
 }
 
 @layer utilities {
@@ -916,7 +920,7 @@
     @apply flex justify-center overflow-hidden;
   }
   .brand-wrapper .swiper-pagination {
-    @apply flex justify-center gap-[40px] 767:gap-[15px] relative inset-0 pt-40;
+    @apply flex justify-center gap-[40px]  relative inset-0 pt-40;
   }
   .traveler-wrapper .swiper-pagination {
     @apply flex justify-center gap-[40px] relative inset-0 pt-40;
@@ -937,7 +941,7 @@
   .highlights-wrapper .card {
     @apply flex flex-col gap-[10px];
   }
-  .highlights-wrapper .btn-navigation {
+  .highlights-wrapper .btn-navigation{
     @apply 1023:flex items-center relative mt-40 justify-center m-0 bottom-0 left-0 gap-[40px];
   }
   .highlights-wrapper .btn-navigation .swiper-button-next,
@@ -991,8 +995,56 @@
   .booking-wrapper .tab-content img {
     object-position: 65%;
   }
+  .booking-wrapper .tab-content .activity-tab-content-thumb {
+    @apply relative;
+  }
 
-  
+  .booking-wrapper .tab-content .activity-tab-content-thumb::after{
+    @apply content-[''] absolute top-0 left-0 h-full w-full bg-Black bg-opacity-20;
+  }
+ 
+
+  /* faq-start */
+  .faq-wrapper .accordion-title span {
+    @apply text-[17px] font-700 leading-[21px] font-museo text-Font;
+  }
+  .faq-wrapper .accordion-item {
+    @apply w-full border-Orange border-1 border-solid rounded-[32px];
+  }
+  .faq-wrapper .accordion-title.active span {
+    @apply text-Orange;
+  }
+  .faq-wrapper .accordion-title {
+    @apply flex flex-wrap justify-between w-full border-Orange border-1 border-solid rounded-[80px] p-20;
+  }
+  .faq-wrapper .accordion-content {
+    @apply p-20;
+  }
+
+  /* gallery-start */
+  .gallary-wrapper .landscape {
+    @apply relative h-full w-full ;
+  }
+  .gallary-wrapper .landscape img {
+    @apply  top-0 left-0 h-full w-full object-cover rounded-[20px] ;
+  }
+  .gallary-wrapper .landscape::after{
+    @apply content-[''] absolute top-0 left-0 h-full w-full bg-Black bg-opacity-20 rounded-[20px];
+  }
+  .gallary-wrapper .swiper-button-prev::after,
+  .gallary-wrapper .swiper-button-next::after{
+    @apply content-[''] absolute top-0 left-0 h-full w-full bg-gallery_btn;
+  }
+  .gallary-wrapper .btn-navigation{
+    @apply flex items-center absolute px-20 justify-between m-0 top-[50%] left-0 gap-[40px] w-full ;
+  }
+  .gallary-wrapper .swiper-slide{
+    @apply transition-all duration-300 delay-100 !h-[413px]  ;
+  }
+  .gallary-wrapper .swiper-slide:hover{
+    @apply lg:!w-[850px] 
+  }
+
   /* footer-start */
   .footer .footer-dropdown ul {
     @apply flex flex-col gap-[10px] 767:justify-center 767:items-center;
