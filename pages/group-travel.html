@@ -304,8 +304,8 @@
     <!--overview zigzag-->
     <section class="overview-zigzag_wrapper py-60">
       <div class="container-fluid-lg">
-        <div class="overview-top_content flex border-0 border-b-2 border-Chocolate border-solid">
-          <div class="overview-top_left pb-20 pr-55 border-0 border-r-2 border-Chocolate border-solid">
+        <div class="overview-top_content flex flex-wrap lg:flex-nowrap border-0 border-b-2 border-Chocolate border-solid">
+          <div class="overview-top_left text-center lg:text-left pb-20 lg:pr-55 border-0 lg:border-r-2 1023:border-b-2 border-Chocolate border-solid">
             <div class="ticket-pricing">
               <h3 class="uppercase font-amatic text-green"><span>Adults</span> starting at $229 <br>
                 <span>Children</span> starting at $204</h3>
@@ -318,15 +318,36 @@
               <h5>Free Cancellations up to 24 hours before tour time</h5>
             </div>
           </div>
-          <div class="overview-top_right pb-20 pl-55 flex-1">
-            <div class="overview-top_inner">
-              <div class="title">
+          <div class="overview-top_right pb-20 lg:pl-55 flex-1">
+            <div class="overview-top_inner flex flex-wrap lg:flex-nowrap justify-between px-20 gap-[20px] items-center h-full">
+              <div class="title text-left 1023:text-center 1023:w-full">
                 <h3 class="uppercase">Details</h3>
               </div>
               <div class="details_list">
-                <ul>
+                <ul class="grid grid-cols-2 lg:grid-cols-3 gap-[20px]">
                   <li>
-                    
+                    <img src="../assets/images/clock.png" width="20" height="20" alt="clock" />
+                    <p>12 hrs</p>
+                  </li>
+                  <li>
+                    <img src="../assets/images/group.png" width="20" height="20" alt="group" />
+                    <p>Ages 6+</p>
+                  </li>
+                  <li>
+                    <img src="../assets/images/lunch.png" width="20" height="20" alt="lunch" />
+                    <p>Lunch & Dinner</p>
+                  </li>
+                  <li>
+                    <img src="../assets/images/growth.png" width="20" height="20" alt="growth" />
+                    <p>Easy to Moderate</p>
+                  </li>
+                  <li>
+                    <img src="../assets/images/new-group.png" width="20" height="20" alt="new-group" />
+                    <p>Max 12</p>
+                  </li>
+                  <li>
+                    <img src="../assets/images/bottle.png" width="20" height="20" alt="bottle" />
+                    <p>Drinks</p>
                   </li>
                 </ul>
               </div>

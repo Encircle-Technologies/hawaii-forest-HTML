@@ -992,22 +992,7 @@
     object-position: 65%;
   }
 
-  /* information-start */
-
-  .price-info span {
-    @apply  text-16 leading-[20px] italic;
-  }
-
-  .facility-menu ul {
-    display: grid;
-    grid-template-columns: 1fr 0.6fr 1fr;
-    row-gap: 20px;
-    column-gap: 49px;
-  }
-  .facility-menu ul li {
-    @apply flex flex-wrap  gap-[4px];
-  }
-
+  
   /* footer-start */
   .footer .footer-dropdown ul {
     @apply flex flex-col gap-[10px] 767:justify-center 767:items-center;

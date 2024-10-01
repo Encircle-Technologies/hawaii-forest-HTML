@@ -7,3 +7,6 @@
 .overview-zigzag_wrapper .overview-top_content .cancellation-txt h5 {
   @apply font-400;
 }
+.overview-zigzag_wrapper .details_list ul li {
+  @apply flex gap-[4px];
+}
