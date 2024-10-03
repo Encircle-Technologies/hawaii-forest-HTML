@@ -1181,5 +1181,25 @@ h3,
 /* nature-slider_wrapper css end */
 
 /* tabbing_wrapper css start */
-
+  .tabbing_wrapper .inner_img img {
+    @apply border-[4px] border-solid border-Beige rounded-[20px];
+  }
+  .tabbing_wrapper .tabs-nav li a {
+    @apply w-full bg-transparent text-White uppercase text-16 leading-20 lg:text-20 lg:leading-24 xxl:text-24 xxl:leading-[28.8px] h-full flex justify-center items-center py-10 rounded-[14px];
+  }
+  .tabbing_wrapper .tabs-nav li.tab-active a {
+    @apply bg-White text-Font text-center;
+  }
+  .tabbing_wrapper .tabs-nav li {
+    @apply px-10 first-of-type:pl-0 last-of-type:pr-0 border-0 border-r-1 border-solid border-Beige last-of-type:border-0;
+  }
+  .tabbing_wrapper .inner-content .title h2,.tabbing_wrapper .inner-content .content p,.tabbing_wrapper .inner-content .title h2,.tabbing_wrapper .inner-content .content ul li {
+    @apply text-White; 
+  }
+  .tabbing-grid .grid-img img {
+    @apply mx-auto w-[100px] lg:w-[150px] lg:h-[150px] xxl:w-[210px] xxl:h-[210px];
+  }
+  .tabbing_wrapper .grid-title h4,.tabbing_wrapper .content p {
+    @apply text-White;
+  }
 /* tabbing_wrapper css end */

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hawaii-forest-html</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../assets/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/zyv2tbn.css">
+  <link rel="stylesheet" href="https://use.typekit.net/zyv2tbn.css">
+
+  <!-- Main custom css -->
+  <link href="../assets/css/dist/style.css" media="screen" rel="stylesheet" />
+</head>
+
+<body class="home">
+  <!-- Skip Links -->
+  <a href="#menu" role="button" tabindex="0" class="skip-link absolute top-0 left-[-50%]">Skip to Menu</a>
+  <a href="#main-content" role="button" tabindex="-1" class="skip-link absolute top-0 left-[-50%]">Skip to Main
+    Content</a>
+  <a href="#footer" role="button" tabindex="-1" class="skip-link absolute top-0 left-[-50%]">Skip to Footer</a>
+
+  <header class="header header-transparent">
+      <div class="announcement-wrapper bg-green xl:h-[82px]">
+          <div class="xl:px-40 xl3:px-0 px-30 xl3:max-w-screen-2xl mx-auto 1199:py-[14px] py-20">
+              <div class="flex flex-wrap items-center justify-center m-0 p-0 w-full relative">
+                  <div class="w-full xl:w-6/12">
+                      <div class="announcement-bar swiper">
+                          <div class="swiper-wrapper">
+                              <div class="swiper-slide 1199:text-center">
+                                  <p>
+                                      This is the first example of a sitewide notice.
+                                  </p>
+                              </div>
+                              <div class="swiper-slide 1199:text-center">
+                                  <p>
+                                      This is the first example of a sitewide notice.
+                                  </p>
+                              </div>
+                              <div class="swiper-slide 1199:text-center">
+                                  <p>
+                                      This is the first example of a sitewide notice.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="w-full xl:w-6/12 relative">
+                      <ul class="hidden xl:flex flex-row gap-5 m-0 p-0 items-center justify-end relative">
+                          <li>
+                              <a href="tel:808.331.8505" class="btn btn-link-white btn-ico" aria-label="Phone number">
+                                  <img src="../assets/images/phone-white.svg" width="20" height="20" alt="phone" />
+                                  <span>808.331.8505</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="javascript:void(0);" class="btn btn-transperent" aria-label="Donate">
+                                  Book Now
+                              </a>
+                          </li>
+                          <li>
+                              <a href="javascript:void(0);" class="btn btn-transperent" aria-label="Zipline tour">
+                                  Zipline Tours
+                              </a>
+                          </li>
+                          <li>
+                              <a href="javascript:void(0);" class="btn-search block">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M19.289 15.7606L15.9972 12.4688C16.5957 11.2718 16.9947 9.87531 16.9947 8.4788C16.9947 3.79052 13.2042 0 8.51591 0C3.82763 0 0.0371094 3.79052 0.0371094 8.4788C0.0371094 13.1671 3.82763 16.9576 8.51591 16.9576C9.91242 16.9576 11.3089 16.5586 12.5059 15.9601L15.7977 19.2519C16.7952 20.2494 18.2915 20.2494 19.289 19.2519C20.1867 18.2544 20.1867 16.7581 19.289 15.7606ZM8.51591 14.9626C4.92489 14.9626 2.03212 12.0698 2.03212 8.4788C2.03212 4.88778 4.92489 1.99501 8.51591 1.99501C12.1069 1.99501 14.9997 4.88778 14.9997 8.4788C14.9997 12.0698 12.1069 14.9626 8.51591 14.9626Z"
+                                          fill="#FEFEFE" />
+                                  </svg>
+                              </a>
+                              <div class="search-bar hidden w-full max-w-[246px]">
+                                  <div
+                                      class="flex items-center py-0 pb-[4px] px-0 bg-White-100 border-0 border-b-1 border-solid border-White gap-[10px] w-full">
+                                      <form class="w-full block">
+                                          <input type="text" id="search" name="search" placeholder="Search..."
+                                              class="block p-0 m-0 bg-transparent border-0 outline-0 w-full text-17 leading-[21px] text-White font-300 placeholder:text-16 placeholder:font-museo placeholder:font-300 placeholder:text-White placeholder:opacity-100">
+                                      </form>
+                                      <a href="javascript:void(0);" class="btn-close-search">
+                                          <img src="../assets/images/close-cross.svg" width="14" height="14"
+                                              alt="close">
+                                      </a>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="lg:px-40 xl3:px-0 px-30 w-full xl3:max-w-screen-2xl mx-auto 1199:static relative">
+          <div class="nav-top flex flex-wrap justify-between items-start xl:items-center w-full">
+              <a href="tel:808.331.8505" class="btn btn-link-white btn-ico xl:hidden mt-20" aria-label="Phone number">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M18.4211 13.6684C17.1873 13.6684 15.979 13.4758 14.8337 13.0979C14.2747 12.9053 13.64 13.0537 13.2726 13.4284L11.0021 15.1432C8.39685 13.7527 6.72948 12.0863 5.35792 9.50001L7.02632 7.28316C7.44632 6.86316 7.59686 6.24841 7.41686 5.67264C7.0358 4.52 6.84213 3.31053 6.84213 2.07895C6.84213 1.20841 6.13372 0.5 5.26318 0.5H1.57895C0.708405 0.5 0 1.20841 0 2.07895C0 12.2358 8.26422 20.5 18.4211 20.5C19.2916 20.5 20 19.7916 20 18.9211V15.2474C20 14.3768 19.2916 13.6684 18.4211 13.6684Z"
+                          fill="#FEFEFE" />
+                  </svg>
+              </a>
+              <div class="logo">
+                  <a href="index.html" aria-label="Hawaii Forest & Trail Your Guide to Big Adventure">
+                      <img src="../assets/images/logo-white.svg" width="160" class="white"
+                          alt="Hawaii Forest & Trail Your Guide to Big Adventure">
+                      <img src="../assets/images/logo-black.svg" width="160" class="black"
+                          alt="Hawaii Forest & Trail Your Guide to Big Adventure">
+                  </a>
+              </div>
+              <button role="button" class="navbar-toggler xl:hidden bg-transparent border-0 p-0 mt-20" type="button">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M18.3548 1.5H4.64516C3.74032 1.5 3 2.2875 3 3.25C3 4.2125 3.74032 5 4.64516 5H18.3548C19.2597 5 20 4.2125 20 3.25C20 2.2875 19.2597 1.5 18.3548 1.5Z"
+                          fill="#FEFEFE" />
+                      <path
+                          d="M15.3548 8.5H1.64516C0.740323 8.5 0 9.2875 0 10.25C0 11.2125 0.740323 12 1.64516 12H15.3548C16.2597 12 17 11.2125 17 10.25C17 9.2875 16.2597 8.5 15.3548 8.5Z"
+                          fill="#FEFEFE" />
+                      <path
+                          d="M18.3548 15.5H4.64516C3.74032 15.5 3 16.2875 3 17.25C3 18.2125 3.74032 19 4.64516 19H18.3548C19.2597 19 20 18.2125 20 17.25C20 16.2875 19.2597 15.5 18.3548 15.5Z"
+                          fill="#FEFEFE" />
+                  </svg>
+              </button>
+              <nav id="menu" class="navbar">
+                  <div id="menu-main-menu" class="mobile-menu-main">
+                      <ul role="list"
+                          class="menu flex 1199:flex-col flex-wrap xl:items-center items-start my-0 xl:gap-5 xxxl:gap-10">
+                          <li>
+                              <a href="#" aria-label="Volcanoes">
+                                  Volcanoes
+                              </a>
+                              <ul role="list" class="sub-menu">
+                                  <li>
+                                      <a href="#" aria-label="Volcano Unveiled">
+                                          Volcano Unveiled
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" aria-label="Hidden Craters Hike">
+                                          Hidden Craters Hike
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" aria-label="Custom Adventures">
+                                          Custom Adventures
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#" aria-label="Waterfalls">
+                                  Waterfalls
+                              </a>
+                              <ul role="list" class="sub-menu">
+                                  <li>
+                                      <a href="#" aria-label="Kohala Waterfalls Adventure">
+                                          Kohala Waterfalls Adventure
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" aria-label="Kohala Zip & Dip">
+                                          Kohala Zip & Dip
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" aria-label="Custom Adventures">
+                                          Custom Adventures
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#" aria-label="Mauna Kea">
+                                  Mauna Kea
+                              </a>
+                              <ul role="list" class="sub-menu">
+                                  <li>
+                                      <a href="#" aria-label="Mauna Kea Adventures">
+                                          Mauna Kea Adventures
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" aria-label="Custom Adventures">
+                                          Custom Adventures
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#" aria-label="Birding">
+                                  Birding
+                              </a>
+                              <ul role="list" class="sub-menu">
+                                  <li>
+                                      <a href="#" aria-label="Hakalau Exclusive">
+                                          Hakalau Exclusive
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" aria-label="Custom Adventures">
+                                          Custom Adventures
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#" aria-label="Custom Experiences">
+                                  Custom Experiences
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#" aria-label="Group Travel">
+                                  Group Travel
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#" aria-label="Stewardship">
+                                  Stewardship
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#" aria-label="Contact Us">
+                                  Contact Us
+                              </a>
+                              <ul role="list" class="sub-menu">
+                                  <li>
+                                      <a href="#" aria-label="Email">
+                                          Email
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#" aria-label="Location">
+                                          Location
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                      <div class="mobile-search-bar hidden 1199:block w-full p-20 ">
+                          <div
+                              class="flex items-center py-0 pb-[4px] px-0 bg-White-100 border-0 border-b-1 border-solid border-White w-full gap-[10px] ">
+                              <form class=" w-full block">
+                                  <input type="text" id="search" name="search" placeholder="Search..."
+                                      class="block p-0 m-0  bg-transparent border-0 outline-0 w-full text-17 leading-[21px] text-White font-300 placeholder:text-16 placeholder:font-museo placeholder:font-300 placeholder:text-White placeholder:opacity-100">
+                              </form>
+                          </div>
+                      </div>
+                      <div class="btn-custom hidden 1199:flex btn-inline justify-center gap-[20px] py-20">
+                          <a href="javascript:void(0);" class="btn btn-transperent w-[137px]" aria-label="Book now">
+                              Book Now
+                          </a>
+                          <a href="javascript:void(0);" class="btn btn-transperent w-[158px]" aria-label="Zipline tour">
+                              Zipline Tours
+                          </a>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </header> 
+
+  <!-- small-banner -->
+  <section class="banner banner-md relative anim">
+    <div class="banner-inner flex w-full h-[424px] xl:pt-[82px] pt-[48px]">
+        <img src="../assets/images/tour-collection-banner.webp" alt="banner-image" height="424" width="1440"
+            loading="eager" class="h-full w-full object-center 1023:object-cover">
+    </div>
+    <div class="container-fluid">
+        <div class="banner-desc">
+            <div class="absolute head  bottom-[40px] left-0 z-99 text-center w-full">
+                <div class="title title-white anim-up">
+                    <h1 class="big">Stewardship</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--general content start-->
+<section class="general-content text-center py-60 bg-Beige">
+  <div class="container-fluid-lg">
+    <div class="title title-chocolate mb-20 last:mb-0  ">
+      <h2>
+        A Giving Fund to Support Conservation, Culture & Nature Connection
+      </h2>
+  </div>
+  <div class="content">
+      <h4 class="text-Tengerine font-400">
+        Connect. Collaborate. Conserve. Foraging connections that nurture our ohana, island communities, and natural resources.
+      </h4>
+  </div>
+  </div>
+</section>
+<!--general content end-->
+
+<!--nature-slider_wrapper start-->
+<section class="nature-slider_wrapper pb-40 bg-Beige ">
+  <div class="container-fluid">
+    <div class="natureslider-inner anim">
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper sliderimg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%] anim-img">
+              <img class="img-fluid" src="../assets/images/slider-1.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="nature-slide-img relative pt-[54.42%]">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div thumbsSlider="" class="swiper sliderthumb mt-20">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="../assets/images/slider-1.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="natureslide-tab h-full">
+              <img class="img-fluid" src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="slider-btns flex justify-between absolute w-full top-[50%] translate-y-[-50%] z-1 items-center h-full">
+          <div class="prev-btn cursor-pointer relative h-full flex items-center w-[170px] justify-start pl-10">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_631_14120)">
+              <path d="M6.59365 15.3862L18.6332 27.4254C19.3991 28.1916 20.6408 28.1916 21.4063 27.4254C22.1719 26.6598 22.1719 25.4182 21.4063 24.6527L10.7531 13.9998L21.406 3.34734C22.1715 2.58148 22.1715 1.33995 21.406 0.574397C20.6404 -0.191466 19.3988 -0.191466 18.6329 0.574397L6.59334 12.6138C6.21057 12.9968 6.0194 13.4981 6.0194 13.9998C6.0194 14.5016 6.21094 15.0034 6.59365 15.3862Z" fill="#FEFEFE"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_631_14120">
+              <rect width="28" height="28.0001" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>            
+          </div>
+          <div class="next-btn cursor-pointer relative h-full flex items-center w-[170px] justify-end pr-10">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_631_14123)">
+              <path d="M21.4063 12.6138L9.36677 0.574614C8.6009 -0.191622 7.35919 -0.191622 6.5937 0.574614C5.82815 1.34017 5.82815 2.58182 6.5937 3.34731L17.2469 14.0002L6.59401 24.6527C5.82845 25.4185 5.82845 26.6601 6.59401 27.4256C7.35956 28.1915 8.60121 28.1915 9.36707 27.4256L21.4067 15.3862C21.7894 15.0032 21.9806 14.5019 21.9806 14.0002C21.9806 13.4984 21.7891 12.9966 21.4063 12.6138Z" fill="#FEFEFE"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_631_14123">
+              <rect width="28" height="28.0001" fill="white" transform="translate(28 28) rotate(-180)"/>
+              </clipPath>
+              </defs>
+              </svg>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="natureslider-content pt-40 anim">
+      <div class="content text-center anim-up">
+        <p>Since 1993 Hawaii Forest & Trail's vision to share the splendor of Hawaii Nei and inspire a deeper connection with nature has guided our success and growth. Supporting our local communities and resources is an integral part of our company mission. As we've grown, our ability to support and partner with organizations, communities, and schools in Hawaii has grown accordingly. Now, with our expansion to Oahu and in recognition of our 25 years of operation, we've established a giving fund in partnership with the Hawaii Community Foundation. The Iiwi Fund, named after Hawaii's iconic scarlet red honeycreeper and the featured bird in our logo, represents our continued kuleana to support, care, and advocate for the conservation of Hawaii's native ecosystems, culture, and natural wonders.</p>
+        <p>The Ho'omālama Initiative encompasses Hawaii Forest & Trail's commitment to nurturing our staff through development opportunities, conserving our natural resources with sustainable management practices, and connecting with stakeholders in our community. The seed for this growing initiative was planted in 2008 when Hawaii Forest & Trail launched e ho'omaluō, a program dedicated to promoting the responsible management and conservation of Hawai'i's natural resources. With time, the scope of this program has broadened to include programs that invest in our staff and community. We believe that by sharing our love for Hawaii's natural world we can inspire a deep connection between people and place, which in turn leads to a commitment to the conservation of Hawaii Nei. We welcome you to learn more about our programs and join us as stakeholders in the future of Hawai'i.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--nature-slider_wrapper end-->
+
+<!--tabbing_wrapper start-->
+<section class="tabbing_wrapper bg-Beige py-60">
+  <div class="container-fluid-lg">
+    <div class="tabbing_inner bg-Tengerine rounded-[20px]">
+      <div class="tabs">
+        <select class="tabs-select hidden 1023:block w-full border-1 border-solid border-Beige bg-transparent text-Beige py-10 px-20" aria-label="Tab Navigation">
+          <option value="#tab-1">I'IWI FUND</option>
+          <option value="#tab-2">CONSERVATION</option>
+          <option value="#tab-3">COMMUNITY</option>
+          <option value="#tab-4">NATURAL RESOURCES</option>
+        </select>
+        <ul class="tabs-nav 1023:hidden grid grid-cols-4 py-10 mx-10">
+          <li><a href="#tab-1">I'IWI FUND</a></li>
+          <li><a href="#tab-2">CONSERVATION</a></li>
+          <li><a href="#tab-3">COMMUNITY</a></li>
+          <li><a href="#tab-4">NATURAL RESOURCES</a></li>
+        </ul>
+        <div class="tabs-stage py-60 px-20 lg:px-40 xxl:px-100">
+          <div class="tab_content" id="tab-1">
+            <div class="flex 1023:flex-wrap items-center gap-[20px] lg:gap-[40px] xxl:gap-[134px]">
+              <div class="w-full lg:w-6/12">
+                  <div class="inner-content">
+                    <div class="title">
+                      <h2>The ʻIʻiwi Fund</h2>
+                    </div>
+                    <div class="content mt-[8px]">
+                      <p>Hawaii’s environment and culture face a myriad of significant and complex threats. At the same time, the public’s understanding of and connection with nature is one of today’s modern tragedies. As an example, the Hawaiian Honeycreepers, a group of birds found only in Hawaii, is the world’s greatest example of evolutionary process among birds. The honeycreepers are also the most endangered with more extinctions than any other tribe of birds on the planet.  Few who live here and even fewer who visit here have no clue that these natural wonders exist in our forests and that their survival depends on us. The Iiwi Fund is our small part in making sure the Iiwi doesn’t disappear.</p>
+                    </div>
+                    <div class="btn-custom 1199:flex btn-inline gap-[20px] mt-[8px]">
+                      <a href="javascript:void(0);" class="btn btn-transperent" aria-label="Donate">
+                          Donate
+                      </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12">
+                <div class="inner_img">
+                  <img class="img-fluid" src="../assets/images/tab-image.jpg" width="489" height="356" alt="tab-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab_content" id="tab-2">
+            <div class="inner-content">
+              <div class="title">
+                <h2>Support the Cause</h2>
+              </div>
+              <div class="content">
+                <p>Proceeds from our activities and guest contributions support local Non-Profit conservation efforts. We invite each guest to give to support the local conservation organizations (one of our first guest’s donations was $25,000!)  Our industry partners and business vendors also donate money to the fund. Initial seed money for the fund of $10,000 came from a personal donation by our founders Rob & Cindy Pacheco. As the fund grows, we will periodically solicit requests for grants from qualifying organizations but will also entertain requests at any time.</p>
+              </div>
+            </div>
+            <div class="flex 1023:flex-wrap items-center gap-[20px] lg:gap-[40px] xxl:gap-[134px]">
+              <div class="w-full lg:w-6/12">
+                  <div class="inner-content">
+                    <div class="title">
+                      <h2>How The Fund Works</h2>
+                    </div>
+                    <div class="content mt-[8px]">
+                      <p>For each guest on tour, Hawaii Forest & Trail donates $1. We encourage each of our guests to match that dollar if they’d like, or give any amount you choose.</p>
+
+                        <p>Qualifying organizations must be a 501(c)3 entity and whose mission and work aligns with at least one of the following criteria:</p>
+                        <ul>
+                          <li>Benefits the conservation of Hawaii’s native ecosystems, species and landscapes.</li>
+                          <li>Shares the understanding and practice of Hawaiian culture and the dissemination and understanding of Hawaii’s natural and cultural history.</li>
+                          <li>Promotes and facilitates an appreciation and interaction with nature especially within youth-oriented programs.</li>
+                        </ul>
+                        <p>The ʻIʻiwi Fund intends to give preference to entities that are based or whose work is performed in the communities where we operate tours. If you’d like to help with this fund, donations in all amounts are accepted. Mahalo for your kokua.</p>
+                    </div>
+                    <div class="btn-custom 1199:flex btn-inline gap-[20px] mt-[8px]">
+                      <a href="javascript:void(0);" class="btn btn-transperent" aria-label="Donate">
+                          Donate
+                      </a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-6/12">
+                <div class="inner_img">
+                  <img class="img-fluid" src="../assets/images/tab-image.jpg" width="489" height="356" alt="tab-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab_content" id="tab-3">
+            <div class="inner-content">
+              <div class="title">
+                <h2>Community Outreach</h2>
+              </div>
+            </div>
+            <div class="tabbing-grid mt-40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[40px]">
+              <div class="grid-box text-center p-20">
+                <div class="grid-img">
+                  <img src="../assets/images/grid-1.png" width="210" height="210" alt="grid-1">
+                </div>
+                <div class="grid-title title mt-20">
+                  <h4>Philanthropy</h4>
+                </div>
+                <div class="content mt-10">
+                  <p>We contribute to the community through in-kind and outreach programs focused on conservation, including the Grow Hawai’i Festival, Hakalau Forest NWR Open House, Waikoloa Dryland Forest Initiative, the Hawaii Conservation Conference, and more.</p>
+                </div>
+              </div>
+              <div class="grid-box text-center p-20">
+                <div class="grid-img">
+                  <img src="../assets/images/grid-1.png" width="210" height="210" alt="grid-1">
+                </div>
+                <div class="grid-title title mt-20">
+                  <h4>Community Support</h4>
+                </div>
+                <div class="content mt-10">
+                  <p>Hawaii Forest & Trail and Kohala Zipline donate over $28,000 in services annually to local community organizations that are aligned with our Vision and Mission.</p>
+                </div>
+              </div>
+              <div class="grid-box text-center p-20">
+                <div class="grid-img">
+                  <img src="../assets/images/grid-1.png" width="210" height="210" alt="grid-1">
+                </div>
+                <div class="grid-title title mt-20">
+                  <h4>Strategic Partnerships</h4>
+                </div>
+                <div class="content mt-10">
+                  <p>Hawaii Forest & Trail and Kohala Zipline are proud to partner with several local, national, and international organizations devoted to conservation and sustainable tourism. Some of those organizations include the Nature Conservancy, Division of Forest & Wildlife, Hawaii Ecotourism Association, Friends of Hakalau Forest, Kohala Project Venture, and the World Heritage Alliance for Sustainable Tourism.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab_content" id="tab-4">
+            <div class="inner-content">
+              <div class="title">
+                <h2>Ho’omālama Programs</h2>
+              </div>
+              <div class="content">
+                <p>e ho’omaluō,: Conserve our natural resources</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--tabbing_wrapper end-->
+
+  <!-- footer-start -->
+  <footer id="footer" class="footer bg-Chocolate md:px-40">
+    <div class="container-fluid">
+      <div class="footer-top lg:py-50 py-40">
+        <div class="flex flex-wrap justify-center md:justify-between w-full gap-[40px]">
+          <div class="flex flex-col justify-center md:justify-start gap-[20px] ">
+            <div class="title title-white 767:text-center">
+              <h3>
+                Begin Your Adventure, Today!
+              </h3>
+              <span class="sub-white">
+                Join our newsletter to keep up with our latest tours, offerings, and events!
+              </span>
+            </div>
+            <div class="newsletter-form">
+              <div class="subscribe-wrapper flex gap-[16px] 767:justify-center">
+                <label for="email"
+                  class="px-20 py-10 bg-transparent border-White border-[2px] border-solid rounded-[150px]">
+                  <input type="email" name="email"
+                    class="subscribe-input lg:w-[269px] border-0 h-full font-museo bg-transparent text-White"
+                    placeholder="Enter your email">
+                </label>
+                <a href="javascript:void(0);" class="btn btn-transperent submit-btn">
+                  Subscribe
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:flex-row flex-col 767:items-center justify-center md:gap-[80px] gap-[20px]">
+            <div class="footer-menu">
+              <div class="title 767:cursor-pointer title-white flex flex-wrap 767:justify-center gap-[20px] mb-10">
+                <h4>
+                  Our Policies
+                </h4>
+                <img class="dropdown-icon md:hidden" src="../assets/images/arrow-up.svg" alt="footer-menu">
+              </div>
+              <div class="footer-dropdown">
+                <ul role="list">
+                  <li>
+                    <a href="#" aria-label="Reservation policy" role="link">
+                      Reservation Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Health & safety Policy" role="link">
+                      Health & Safety Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Participant Agreement" role="link">
+                      Participant Agreement
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-menu">
+              <div class="title 767:cursor-pointer title-white flex flex-wrap 767:justify-center gap-[20px] mb-10">
+                <h4>
+                  Our Company
+                </h4>
+                <img class="dropdown-icon md:hidden" src="../assets/images/arrow-up.svg" alt="footer-menu">
+              </div>
+              <div class="footer-dropdown">
+                <ul role="list">
+                  <li>
+                    <a href="#" aria-label="press room" role="link">
+                      Press Room
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="careers" role="link">
+                      Careers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="out Partners" role="link">
+                      Our Partners
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-menu">
+              <div class="title 767:cursor-pointer title-white flex flex-wrap 767:justify-center gap-[20px] mb-10">
+                <h4>
+                  About us
+                </h4>
+                <img class="dropdown-icon md:hidden" src="../assets/images/arrow-up.svg" alt="footer-menu">
+              </div>
+              <div class="footer-dropdown">
+                <ul role="list">
+                  <li>
+                    <a href="#" aria-label="our story" role="link">
+                      Our Story
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="our guides" role="link">
+                      Our Guides
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="blog" role="link">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="faq" role="link">
+                      FAQs
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom border-0 border-t-2 border-t-light_grey border-solid w-full py-20 479:px-40">
+        <div class="flex flex-wrap 767:flex-col-reverse justify-between w-full items-center gap-[20px]">
+          <div class="copy-right content white">
+            <p>
+              © 2024 Hawaii Forest & Trail
+            </p>
+          </div>
+          <div class="social-media">
+            <ul role="list" class="flex flex-wrap justify-center gap-[20px]">
+              <li>
+                <a href="javascript:void(0);" role="link" target="_blank"
+                  class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                  <img class="social-icon" src="../assets/images/mail.svg" alt="mail" class="lozad" data-loaded="true">
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" role="link" target="_blank"
+                  class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                  <img class="social-icon" src="../assets/images/insta.svg" alt="insta" class="lozad"
+                    data-loaded="true">
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" role="link" target="_blank"
+                  class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                  <img class="social-icon" src="../assets/images/facebook.svg" alt="facebook" class="lozad"
+                    data-loaded="true">
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" role="link" target="_blank"
+                  class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                  <img class="social-icon" src="../assets/images/tiktok.svg" alt="tiktok" class="lozad"
+                    data-loaded="true">
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" role="link" target="_blank"
+                  class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                  <img class="social-icon" src="../assets/images/twiiter.svg" alt="twitter" class="lozad"
+                    data-loaded="true">
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" role="link" target="_blank"
+                  class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                  <img class="social-icon" src="../assets/images/yelp.svg" alt="yelp" class="lozad" data-loaded="true">
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" role="link" target="_blank"
+                  class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                  <img class="social-icon" src="../assets/images/you-tube.svg" alt="youtube" class="lozad"
+                    data-loaded="true">
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" role="link" target="_blank"
+                  class="!w-[48px] h-[48px] border-1 border-solid rounded-100 border-White bg-transparent flex items-center justify-center hover:bg-White p-10">
+                  <img class="social-icon" src="../assets/images/linkdin.svg" alt="linkdin" class="lozad"
+                    data-loaded="true">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+<script src="../assets/js/script.js"></script>
+<script>
+  var swiper = new Swiper(".sliderthumb", {
+    spaceBetween: 10,
+    slidesPerView: 3.5,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        575: {
+          slidesPerView: '4.9',
+        },
+        1200: {
+          slidesPerView: '5.5',
+        },
+        1366: {
+          slidesPerView: '7',
+          spaceBetween: 20,
+        }
+      },
+  });
+  var swiper2 = new Swiper(".sliderimg", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".next-btn",
+      prevEl: ".prev-btn",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+  $(document).ready(function () {
+  // Show the first tab by default
+  $('.tabs-stage div.tab_content').hide();
+  $('.tabs-stage div.tab_content:first').show();
+  $('.tabs-nav li:first').addClass('tab-active');
+
+  // Change tab class and display content for tab click
+  $('.tabs-nav a').on('click', function (event) {
+    event.preventDefault();
+    $('.tabs-nav li').removeClass('tab-active');
+    $(this).parent().addClass('tab-active');
+    $('.tabs-stage div.tab_content').hide();
+    $($(this).attr('href')).show();
+  });
+
+  // Change tab content on select change for smaller screens
+  $('.tabs-select').on('change', function () {
+    var tabId = $(this).val();
+    $('.tabs-nav li').removeClass('tab-active');
+    $('.tabs-nav a[href="' + tabId + '"]').parent().addClass('tab-active');
+    $('.tabs-stage div.tab_content').hide();
+    $(tabId).show();
+  });
+
+  // Responsive behavior
+  function updateTabsView() {
+    if ($(window).width() <= 768) {
+      $('.tabs-select').show();
+      $('.tabs-nav').hide();
+    } else {
+      $('.tabs-select').hide();
+      $('.tabs-nav').show();
+    }
+  }
+
+  // Initial check and update on window resize
+  updateTabsView();
+  $(window).on('resize', function () {
+    updateTabsView();
+  });
+});
+
+</script>
+
+</html>
