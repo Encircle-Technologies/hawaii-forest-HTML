@@ -1,8 +1,10 @@
-@import url('custom.css');
+@import 'swiper/swiper-bundle.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://use.typekit.net/zyv2tbn.css');
+@import url(custom.css);
 
 @layer base {
   /* ===== Scrollbar CSS ===== */
@@ -93,7 +95,7 @@
   }
   h3,
   .h3 {
-    @apply text-40 leading-[50.44px];
+    @apply text-40 991:text-32 991:leading-[40.35px] leading-[50.44px];
   }
   span.big.sub-red {
     @apply text-48 leading-[57px];
@@ -325,14 +327,56 @@
     @apply absolute top-[5px] left-0 w-[10px] h-[10px] bg-White rounded-100;
   }
 
-  .img-fluid {
-    @apply h-full w-full object-cover block;
-  }
-}
+  /* ######################### 2 October 2024 ######################### */
 
-@layer utilities {
-  @layer components {
+  .gallary-wrapper .swiper-slide {
+    @apply overflow-hidden rounded-[20px] duration-300 delay-150 ease-linear;
   }
+  .slideIsActive .active{
+    width: 57% !important;
+  }
+  .slideIsActive .swiper-slide:not(.swiper-slide.active){
+    width: 12.6% !important;
+  } 
+
+  /* Common Swiper btns */
+  .swiper-btn{
+    @apply pointer-events-none;
+  }
+  .swiper-btn button{
+    @apply pointer-events-auto;
+  }
+  .swiper-btn button{
+    @apply appearance-none border-none bg-transparent rounded-100 flex justify-center items-center transition-all duration-300;
+    box-shadow: none;
+  }
+  .swiper-btn .swiper-btn-white{
+    @apply border-2 border-solid border-White;
+  }
+  .swiper-btn .swiper-btn-white:hover{
+    @apply bg-Chocolate lg:bg-White;
+  }
+  .swiper-btn .swiper-btn-white:hover img{
+    @apply 1023:!filter-white lg:invert;
+  }
+
+  .gallary-wrapper .swiper-btn{
+    @apply top-[50%] translate-y-minus_50 z-1 1023:!static 1023:!justify-center 1023:!mt-50 1023:!gap-[25px];
+  }
+  .gallary-wrapper .swiper-btn .swiper-btn-white{
+    @apply 1023:border-Chocolate 1023:!h-[42px] 1023:!w-[42px];
+  }
+  .gallary-wrapper .swiper-btn .swiper-btn-white img{
+    @apply 1023:filter-chocolate;
+  }
+
+  .filter-chocolate{
+    filter: brightness(0) saturate(100%) invert(28%) sepia(17%) saturate(1787%) hue-rotate(331deg) brightness(99%) contrast(89%);
+  }
+.filter-white{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(45deg) brightness(103%) contrast(112%);
+}
+}
 
   @layer utilities {
     @keyframes smoothScroll {
@@ -397,7 +441,7 @@
     @screen 1199 {
       .header .logo a::after {
         @apply content-[''] absolute top-0 left-0 h-[147%] w-full object-cover z-99;
-        background-image: url('./../../images/logo-white.svg');
+        background-image: url('../images/logo-white.svg');
       }
       .header.is-sticky .logo a::after {
         @apply hidden;
@@ -641,40 +685,39 @@
       object-position: center;
     }
 
-    .card1 {
+    #card1 {
       clip-path: inset(0 20% 0 0);
       -webkit-clip-path: inset(0 20% 0 0);
     }
 
-    .card2 {
+    #card2 {
       clip-path: inset(0 20% 0 20%);
       -webkit-clip-path: inset(0 20% 0 20%);
     }
 
-    .card3 {
+    #card3 {
       clip-path: inset(0 20% 0 40%);
       -webkit-clip-path: inset(0 20% 0 40%);
     }
 
-    .card4 {
+    #card4 {
       clip-path: inset(0 20% 0 60%);
       -webkit-clip-path: inset(0 20% 0 60%);
     }
 
-    .card5 {
+    #card5 {
       clip-path: inset(0 0% 0 80%);
       -webkit-clip-path: inset(0 0% 0 80%);
     }
 
-    .highlighted {
-      clip-path: inset(0 0% 0 0%);
-      -webkit-clip-path: inset(0 0% 0 0%);
+   .highlighted {
+      clip-path: inset(0 0% 0 0%) !important;
+      -webkit-clip-path: inset(0 0% 0 0%) !important;
     }
 
     .takeover-card .details {
       transition: z-index 0.75s;
     }
-  }
 
   /* banner small-start */
   .banner-md::before {
@@ -708,7 +751,7 @@
 
   /* explore-start */
   .explore-inner {
-    @apply bg-no-repeat bg-cover h-full w-full  relative overflow-hidden;
+    @apply bg-no-repeat bg-cover h-full w-full relative overflow-hidden rounded-[20px];
     background-position-x: 10%;
   }
   .explore-inner::before {
@@ -846,7 +889,7 @@
   }
 
   .grid-box-v2-wrapper .about-slider .landscape img {
-    @apply rounded-100 w-full relative object-cover;
+    @apply rounded-100 w-full relative object-cover h-[140px];
     filter: drop-shadow(4px 4px 14px rgba(0, 0, 0, 0.11));
   }
 
@@ -855,7 +898,7 @@
     object-position: 28%;
   }
   .img-with-content-wrapper .full-img .blur-content {
-    @apply visible opacity-100  z-1  w-full  bg-Black bg-opacity-40 rounded-[20px] lg:p-40 767:bottom-0 767:top-auto p-10 top-[50%] md:translate-y-minus_50 575:mb-10 absolute h-[893px] 639:h-[1033px] right-[40px] 1023:right-auto 1023:left-[50%]  1023:translate-x-minus_50  479:!max-w-[90%]  991:max-w-[75%]  max-w-[595px];
+    @apply visible opacity-100  z-1  w-full  bg-Black bg-opacity-40 rounded-[20px] lg:p-40 767:bottom-0 767:top-auto md:p-20 p-10 top-[50%] md:translate-y-minus_50 575:mb-10 absolute h-[883px] 767:h-fit right-[80px] 1023:right-auto 1023:left-[50%]  1023:translate-x-minus_50  479:!max-w-[calc(100%_-_10px)]  991:max-w-[75%]  max-w-[595px];
     backdrop-filter: blur(15px);
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1),
       inset 4px 4px 15px rgba(255, 255, 255, 0.1);
@@ -927,7 +970,7 @@
   }
   .brand-wrapper .swiper-pagination-bullet,
   .traveler-wrapper .swiper-pagination-bullet {
-    @apply bg-transparent border-1 border-White border-solid opacity-100 h-[11px] w-[11px] !m-0;
+    @apply bg-transparent border-1 border-White border-solid opacity-100 h-[12px] w-[12px] !m-0;
   }
   .brand-wrapper .swiper-pagination-bullet-active,
   .traveler-wrapper .swiper-pagination-bullet-active {
@@ -941,7 +984,7 @@
   .highlights-wrapper .card {
     @apply flex flex-col gap-[10px];
   }
-  .highlights-wrapper .btn-navigation{
+  .highlights-wrapper .btn-navigation {
     @apply 1023:flex items-center relative mt-40 justify-center m-0 bottom-0 left-0 gap-[40px];
   }
   .highlights-wrapper .btn-navigation .swiper-button-next,
@@ -979,6 +1022,8 @@
     @apply text-40 leading-[50.44px];
   }
 
+  /* information-start *
+
   /* booking-tabbing-start */
   .booking-wrapper .nav-item.active {
     @apply bg-green;
@@ -986,7 +1031,7 @@
   .booking-wrapper .nav-item.active a {
     @apply text-White;
   }
-  .booking-wrapper .nav-item {
+  .booking-wrapper .nav-item a {
     @apply px-20 py-10  rounded-[150px];
   }
   .booking-wrapper .nav-item a {
@@ -1015,34 +1060,45 @@
     @apply text-Orange;
   }
   .faq-wrapper .accordion-title {
-    @apply flex flex-wrap justify-between w-full border-Orange border-1 border-solid rounded-[80px] p-20;
+    @apply flex flex-wrap justify-between w-full border-Orange border-1 border-solid rounded-[80px] p-20 -my-[1px];
   }
   .faq-wrapper .accordion-content {
     @apply p-20;
   }
 
-  /* gallery-start */
-  .gallary-wrapper .landscape {
-    @apply relative h-full w-full ;
+    /* gallery-start */
+    .gallary-wrapper .landscape {
+      @apply relative h-full w-full ;
+    }
+    .gallary-wrapper .landscape img {
+      @apply  top-0 left-0 h-full w-full object-cover rounded-[20px] ;
+    }
+    .gallary-wrapper .landscape::after{
+      @apply content-[''] absolute top-0 left-0 h-full w-full bg-Black bg-opacity-20 rounded-[20px];
+    }
+    .gallary-wrapper .swiper-button-prev::after,
+    .gallary-wrapper .swiper-button-next::after{
+      @apply content-[''] absolute top-0 left-0 h-full w-full bg-gallery_btn;
+    }
+    .gallary-wrapper .btn-navigation{
+      @apply flex items-center absolute px-20 justify-between m-0 top-[50%] left-0 gap-[40px] w-full ;
+    }
+    .gallary-wrapper .swiper-slide{
+      @apply transition-all duration-300 delay-100 !h-[413px]  ;
+    }
+
+  .price-info span {
+    @apply  text-16 leading-[20px] italic;
   }
-  .gallary-wrapper .landscape img {
-    @apply  top-0 left-0 h-full w-full object-cover rounded-[20px] ;
+
+  .facility-menu ul {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr 1fr;
+    row-gap: 20px;
+    column-gap: 49px;
   }
-  .gallary-wrapper .landscape::after{
-    @apply content-[''] absolute top-0 left-0 h-full w-full bg-Black bg-opacity-20 rounded-[20px];
-  }
-  .gallary-wrapper .swiper-button-prev::after,
-  .gallary-wrapper .swiper-button-next::after{
-    @apply content-[''] absolute top-0 left-0 h-full w-full bg-gallery_btn;
-  }
-  .gallary-wrapper .btn-navigation{
-    @apply flex items-center absolute px-20 justify-between m-0 top-[50%] left-0 gap-[40px] w-full ;
-  }
-  .gallary-wrapper .swiper-slide{
-    @apply transition-all duration-300 delay-100 !h-[413px]  ;
-  }
-  .gallary-wrapper .swiper-slide:hover{
-    @apply lg:!w-[850px] 
+  .facility-menu ul li {
+    @apply flex flex-wrap  gap-[4px];
   }
 
   /* footer-start */
@@ -1074,3 +1130,56 @@
     @apply rotate-0;
   }
 }
+
+@screen 1023 {
+  .image-with-text-wrapper .image-with-text.left_content::before {
+    background: linear-gradient(180deg, #000000 35.12%, rgba(0, 0, 0, 0) 82.28%);
+  }
+}
+
+@screen 767 {
+  .experinces-inner::after {
+    @apply bg-md_black_gradient;
+  }
+}
+
+
+.overview-bottom_right {
+  @apply relative;
+}
+.overview-bottom_right::before {
+  @apply content-[''] absolute top-0 left-0 h-full w-[5px] bg-[url(./../../images/white-separator.svg)] bg-cover bg-center bg-no-repeat 991:bg-[url(./../../images/white-separator-horizontal.svg)] 991:h-[5px] 991:w-full;
+}
+h3,
+.h3 {
+  @apply text-40 991:text-32 991:leading-[40.35px] leading-[50.44px];
+}
+.overview-zigzag_wrapper .overview-bottom_content ul li{
+  @apply 991:gap-[10px];
+}
+
+
+/* 03 - 10 - 2024 css start */
+/* nature-slider_wrapper css start */
+.nature-slider_wrapper .nature-slide-img img {
+  @apply absolute top-0 left-0;
+}
+.nature-slider_wrapper .sliderthumb .swiper-slide {
+  @apply h-auto;
+}
+.nature-slider_wrapper .slider-btns .next-btn::before {
+  @apply content-[''] absolute top-0 left-0 w-full h-full;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 37.75%, rgba(0, 0, 0, 0.4) 87.67%);
+}
+.nature-slider_wrapper .slider-btns .prev-btn::before {
+  @apply content-[''] absolute top-0 left-0 w-full h-full;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 28.06%, rgba(0, 0, 0, 0.4) 93.25%);
+}
+.nature-slider_wrapper .slider-btns .next-btn svg,.nature-slider_wrapper .slider-btns .prev-btn svg {
+  @apply z-1;
+}
+/* nature-slider_wrapper css end */
+
+/* tabbing_wrapper css start */
+
+/* tabbing_wrapper css end */
