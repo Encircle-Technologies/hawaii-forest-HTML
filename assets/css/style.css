@@ -172,6 +172,13 @@
     @apply text-Tengerine;
   }
 
+  ul.white-list li {
+    @apply relative pl-20;
+  }
+  ul.white-list li::before {
+    @apply content-[''] absolute top-[4px] left-0 w-[10px] h-[10px] bg-White rounded-[999px];
+  }
+
   .title-museo {
     @apply font-museo font-500;
   }
@@ -1197,9 +1204,48 @@ h3,
     @apply text-White; 
   }
   .tabbing-grid .grid-img img {
-    @apply mx-auto w-[100px] lg:w-[150px] lg:h-[150px] xxl:w-[210px] xxl:h-[210px];
+    @apply mx-auto w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] xxl:w-[210px] xxl:h-[210px];
   }
   .tabbing_wrapper .grid-title h4,.tabbing_wrapper .content p {
     @apply text-White;
   }
+  .tabbing_wrapper .tabs-nav {
+    @apply grid-cols-4;
+  }
+  .tabbing_wrapper.our_story .tabs-nav {
+    @apply grid-cols-5;
+  }
 /* tabbing_wrapper css end */
+.select-dropdown__list {
+  display: none; /* Hide by default */
+  list-style: none;
+  position: absolute; /* Position it below the button */
+  width: 100%;
+  z-index: 1000; /* Make sure it's above other elements */
+}
+
+.select-dropdown__list.active {
+  display: block; /* Show when active */
+}
+.tabbing_wrapper .select-dropdown ul li {
+  @apply bg-Beige py-10 px-20;
+}
+.tabbing_wrapper .select-dropdown ul li a {
+  @apply text-Tengerine;
+}
+
+/* our founders wrapper css start */
+.our_founders_wrapper .grid-img::before {
+  @apply content-[''] absolute bottom-0 left-0 w-full h-full;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 78.32%, #000000 99.98%);
+}
+.our_founders_wrapper .grid-img img {
+  @apply absolute top-0 left-0;
+}
+.our_founders_wrapper .grid-content .content p {
+  @apply mb-0;
+}
+.overview-zigzag_wrapper.video .left_content .content p {
+  @apply text-White;
+}
+/* our founders wrapper css end */

@@ -824,5 +824,75 @@ $(document).ready(function ($) {
 })($);
 // Responsive menu 
 
+$(document).ready(function () {
+  var swiper = new Swiper(".sliderthumb", {
+    spaceBetween: 10,
+    slidesPerView: 3.5,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        575: {
+          slidesPerView: '4.9',
+        },
+        1200: {
+          slidesPerView: '5.5',
+        },
+        1366: {
+          slidesPerView: '7',
+          spaceBetween: 20,
+        }
+      },
+  });
+  var swiper2 = new Swiper(".sliderimg", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".next-btn",
+      prevEl: ".prev-btn",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+  // Show the first tab by default
+  $('.tabs-stage div.tab_content').hide();
+  $('.tabs-stage div.tab_content:first').show();
+  $('.tabs-nav li:first').addClass('tab-active');
+
+
+  $('.tabs-nav a').on('click', function (event) {
+    event.preventDefault();
+    $('.tabs-nav li').removeClass('tab-active');
+    $(this).parent().addClass('tab-active');
+    $('.tabs-stage div.tab_content').hide();
+    $($(this).attr('href')).show();
+  });
+
+  $('.select-dropdown__button').on('click', function(event) {
+    event.stopPropagation(); // Prevent the click event from bubbling up
+    $('.select-dropdown__list').slideToggle(); // Slide toggle the dropdown list
+  });
+
+
+  $(document).on('click', function() {
+    $('.select-dropdown__list').slideUp(); // Slide up to close the dropdown
+  });
+
+  $('.select-dropdown__list-item').on('click', function(event) {
+    event.preventDefault(); // Prevent the click event from bubbling up
+    var itemValue = $(this).data('value');
+    var itemText = $(this).find('a').text(); // Get the text of the clicked item
+
+    // Update the button text and data-value attribute
+    $('.select-dropdown__button span').text(itemText).parent().attr('data-value', itemValue);
+    $('.select-dropdown__list').slideUp(); // Slide up to close the dropdown
+
+    // Switch to the corresponding tab content
+    $('.tabs-nav li').removeClass('tab-active'); // Remove active class from all tabs
+    $('.tabs-nav li[data-value="' + itemValue + '"]').addClass('tab-active'); // Add active class to clicked tab
+    $('.tabs-stage div.tab_content').hide(); // Hide all tab contents
+    $('#tab-' + itemValue).show(); // Show the selected tab content
+  });
+});
+
 
 
