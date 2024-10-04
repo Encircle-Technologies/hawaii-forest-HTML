@@ -1,65 +1,50 @@
-.overview-zigzag_wrapper .overview-top_content .taxes-content span {
-  @apply italic text-16 leading-[19.2px] text-Font 1023:text-12 1023:leading-[14.4px];
+/* location-inner-start */
+.location-wrapper .about-info ul {
+  @apply flex flex-col gap-[40px] justify-start items-start;
 }
-.overview-zigzag_wrapper .overview-top_content .cancellation-txt img {
-  @apply w-[24px] h-[24px] object-contain;
+.location-wrapper .about-info ul li {
+  @apply flex flex-wrap gap-[4px] relative w-full 479:flex-col;
 }
-.overview-zigzag_wrapper .overview-top_content .cancellation-txt h5 {
-  @apply font-400 1023:text-12 1023:leading-[14.4px];
+.location-wrapper .about-info ul li span {
+  @apply flex flex-wrap gap-[10px] text-Tengerine font-700 text-[17px] leading-[21px] font-museo;
 }
-.overview-zigzag_wrapper .details_list ul li {
-  @apply flex gap-[4px];
+.location-wrapper .about-info ul li p,
+.location-wrapper .about-info ul li a {
+  @apply text-Font text-[17px] leading-[21px] font-museo font-400;
 }
-.overview-zigzag_wrapper .ticket-pricing h3 span {
-  @apply text-24 leading-30 lg:text-32 lg:leading-40;
+.location-wrapper .about-info ul li::after {
+  @apply content-[''] absolute bottom-[-20px] left-0 h-[1px] w-full bg-Orange;
 }
-.overview-zigzag_wrapper .ticket-pricing h3 {
-  @apply 1023:text-32 1023:leading-40
+.location-wrapper .about-info ul li a:hover {
+  @apply text-Orange;
 }
-.overview-zigzag_wrapper .zigzag-right_video::before {
-  @apply content-[''] absolute top-0 left-0 bg-Black bg-opacity-20 w-full h-full z-1 rounded-[20px];
+.location-wrapper .zigzag-content img {
+  object-position: 65%;
 }
-.overview-zigzag_wrapper .overview-bottom_content ul li {
-  @apply flex items-center gap-[20px];
-}
-.overview-zigzag_wrapper .overview-bottom_content ul li .img_vector {
-  @apply w-[40px] h-[40px] rounded-[999px] flex justify-center items-center z-1;
-  box-shadow: 2px 2px 0px 0px #322E2C;
-}
-.overview-zigzag_wrapper .overview-bottom_content ul li .content p {
-  @apply text-White;
-}
-.img-fluid {
-  @apply h-full w-full object-cover;
+.location-wrapper .zigzag-content  {
+  @apply relative;
 }
 
-/* image-with-text-wrapper css start */
-.image-with-text-wrapper .image-with-text.right_content::before {
-  @apply content-[''] absolute top-0 right-0 w-full h-full bg-no-repeat z-1;
-  background: linear-gradient(270deg, #000000 35.12%, rgba(0, 0, 0, 0) 82.28%);
+.location-wrapper .zigzag-content .activity-tab-content-thumb::after {
+  @apply content-[''] absolute top-0 left-0 h-full w-full bg-Black bg-opacity-20;
 }
-.image-with-text-wrapper .image-with-text .bg-content .title h2,.image-with-text-wrapper .image-with-text .bg-content .content p {
-  @apply text-White;
+.location-wrapper .inner_img img {
+    @apply border-[4px] border-solid border-Beige rounded-[20px];
+ }
+ .img-grid-wrapper .card-img {
+  @apply relative pt-[84.91%] 479:pt-[110.91%] h-full w-full;
 }
-.image-with-text-wrapper .image-with-text.right_content .bg-content {
-  @apply max-w-full lg:max-w-[750px] ml-auto;
+.img-grid-wrapper .card-img img {
+  @apply absolute top-0 left-0 h-full w-full object-cover;
 }
-.image-with-text-wrapper .image-with-text.left_content .bg-content {
-  @apply max-w-[820px] my-60 mx-20 lg:mx-40 xxl:mx-[100px] p-10 lg:p-40 bg-Black bg-opacity-40 rounded-[20px] overflow-hidden;
-  backdrop-filter: blur(15px);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1),
-    inset 4px 4px 15px rgba(255, 255, 255, 0.1);
+.img-grid-wrapper .card-img::after {
+  @apply content-[''] absolute top-0 left-0 h-full w-full;
+  background: linear-gradient(
+    180.03deg,
+    rgba(0, 0, 0, 0) 36.28%,
+    #000000 99.06%
+  );
 }
-.image-with-text-wrapper .image-with-text.right_content .bg-content {
-  @apply px-20 lg:px-40 xxl:px-100;
-}
-.image-with-text-wrapper .image-with-text .bg-content .imagetext-grid .grid-box {
-  @apply w-1/2;
-}
-/* image-with-text-wrapper css end */
-
-@screen 767 {
-  .image-with-text-wrapper .image-with-text.right_content::before {
-    background: linear-gradient(180deg, #000000 35.12%, rgba(0, 0, 0, 0) 82.28%);
-  }
+.img-grid-wrapper .card-description h4 {
+  @apply 479:!text-[26px];
 }

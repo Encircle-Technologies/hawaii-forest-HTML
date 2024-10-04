@@ -25,8 +25,11 @@
     @apply box-border;
   }
   * {
-    outline: none;
     box-shadow: none;
+  }
+  *:focus-visible {
+    outline: 1px dashed #C65427;
+    outline-offset: 2px;
   }
   body {
     @apply p-0 m-0 text-16 leading-[19.36px] relative overflow-x-hidden font-museo text-Font;
@@ -171,12 +174,26 @@
   .title-red h6 {
     @apply text-Tengerine;
   }
+  .title-d-chocolate h1,
+  .title-d-chocolate h2,
+  .title-d-chocolate h3,
+  .title-d-chocolate h4,
+  .title-d-chocolate h5,
+  .title-d-chocolate h6 {
+  @apply text-Dark_Choco;
+}
 
   ul.white-list li {
     @apply relative pl-20;
   }
   ul.white-list li::before {
     @apply content-[''] absolute top-[4px] left-0 w-[10px] h-[10px] bg-White rounded-[999px];
+  }
+  ul.green-list li {
+    @apply relative pl-[8px];
+  }
+  ul.green-list li::before {
+    @apply content-[''] absolute top-[4px] left-0 w-[10px] h-[10px] bg-green rounded-[999px];
   }
 
   .title-museo {
@@ -320,6 +337,19 @@
     @apply absolute top-0 left-0 w-0 h-full bg-Chocolate -z-1 transition-all duration-300 delay-100;
   }
   .btn-chocolate:hover:before {
+    @apply w-full;
+  }
+  .btn-beige {
+    @apply px-20 py-[8px] bg-White  rounded-[150px] text-Tengerine border-White border-[1px] border-solid  relative;
+  }
+  .btn-beige:hover{
+    @apply text-White;
+  }
+  .btn-beige:before {
+    content: '';
+    @apply absolute top-0 left-0 w-0 h-full bg-Tengerine -z-1 transition-all duration-300 delay-100;
+  }
+  .btn-beige:hover:before {
     @apply w-full;
   }
 
@@ -1151,6 +1181,7 @@
 }
 
 
+/* overview-zigzag_wrapper css start */
 .overview-bottom_right {
   @apply relative;
 }
@@ -1163,6 +1194,72 @@ h3,
 }
 .overview-zigzag_wrapper .overview-bottom_content ul li{
   @apply 991:gap-[10px];
+}
+.overview-zigzag_wrapper .overview-top_content .taxes-content span {
+  @apply italic text-16 leading-[19.2px] text-Font 1023:text-12 1023:leading-[14.4px];
+}
+.overview-zigzag_wrapper .overview-top_content .cancellation-txt img {
+  @apply w-[24px] h-[24px] object-contain;
+}
+.overview-zigzag_wrapper .overview-top_content .cancellation-txt h5 {
+  @apply font-400 1023:text-12 1023:leading-[14.4px];
+}
+.overview-zigzag_wrapper .details_list ul li {
+  @apply flex gap-[4px];
+}
+.overview-zigzag_wrapper .ticket-pricing h3 span {
+  @apply text-24 leading-30 lg:text-32 lg:leading-40;
+}
+.overview-zigzag_wrapper .ticket-pricing h3 {
+  @apply 1023:text-32 1023:leading-40
+}
+.overview-zigzag_wrapper .zigzag-right_video::before {
+  @apply content-[''] absolute top-0 left-0 bg-Black bg-opacity-20 w-full h-full z-1 rounded-[20px];
+}
+.overview-zigzag_wrapper .overview-bottom_content ul li {
+  @apply flex items-center gap-[20px];
+}
+.overview-zigzag_wrapper .overview-bottom_content ul li .img_vector {
+  @apply w-[40px] h-[40px] rounded-[999px] flex justify-center items-center z-1;
+  box-shadow: 2px 2px 0px 0px #322E2C;
+}
+.overview-zigzag_wrapper .overview-bottom_content ul li .content p {
+  @apply text-White;
+}
+.img-fluid {
+  @apply h-full w-full object-cover;
+}
+/* overview-zigzag_wrapper css end */
+
+/* image-with-text-wrapper css start */
+.image-with-text-wrapper .image-with-text.right_content::before {
+  @apply content-[''] absolute top-0 right-0 w-full h-full bg-no-repeat z-1;
+  background: linear-gradient(270deg, #000000 35.12%, rgba(0, 0, 0, 0) 82.28%);
+}
+.image-with-text-wrapper .image-with-text .bg-content .title h2,.image-with-text-wrapper .image-with-text .bg-content .content p {
+  @apply text-White;
+}
+.image-with-text-wrapper .image-with-text.right_content .bg-content {
+  @apply max-w-full lg:max-w-[750px] ml-auto;
+}
+.image-with-text-wrapper .image-with-text.left_content .bg-content {
+  @apply max-w-[820px] my-60 mx-20 lg:mx-40 xxl:mx-[100px] p-10 lg:p-40 bg-Black bg-opacity-40 rounded-[20px] overflow-hidden;
+  backdrop-filter: blur(15px);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1),
+    inset 4px 4px 15px rgba(255, 255, 255, 0.1);
+}
+.image-with-text-wrapper .image-with-text.right_content .bg-content {
+  @apply px-20 lg:px-40 xxl:px-100;
+}
+.image-with-text-wrapper .image-with-text .bg-content .imagetext-grid .grid-box {
+  @apply w-1/2;
+}
+/* image-with-text-wrapper css end */
+
+@screen 767 {
+  .image-with-text-wrapper .image-with-text.right_content::before {
+    background: linear-gradient(180deg, #000000 35.12%, rgba(0, 0, 0, 0) 82.28%);
+  }
 }
 
 
@@ -1215,24 +1312,20 @@ h3,
   .tabbing_wrapper.our_story .tabs-nav {
     @apply grid-cols-5;
   }
+  .select-dropdown__list {
+    @apply hidden list-none absolute w-full z-[1000];
+  }
+  
+  .select-dropdown__list.active {
+    @apply block;
+  }
+  .tabbing_wrapper .select-dropdown ul li {
+    @apply bg-Beige py-10 px-20;
+  }
+  .tabbing_wrapper .select-dropdown ul li a {
+    @apply text-Tengerine;
+  }
 /* tabbing_wrapper css end */
-.select-dropdown__list {
-  display: none; /* Hide by default */
-  list-style: none;
-  position: absolute; /* Position it below the button */
-  width: 100%;
-  z-index: 1000; /* Make sure it's above other elements */
-}
-
-.select-dropdown__list.active {
-  display: block; /* Show when active */
-}
-.tabbing_wrapper .select-dropdown ul li {
-  @apply bg-Beige py-10 px-20;
-}
-.tabbing_wrapper .select-dropdown ul li a {
-  @apply text-Tengerine;
-}
 
 /* our founders wrapper css start */
 .our_founders_wrapper .grid-img::before {
@@ -1249,3 +1342,95 @@ h3,
   @apply text-White;
 }
 /* our founders wrapper css end */
+
+/* image-with-text-wrapper our_guides css start */
+.image-with-text-wrapper.our_guides .bg-content .contents p {
+  @apply text-17 leading-[21px] lg:text-24 lg:leading-[28.8px] text-White font-museo;
+}
+.image-with-text-wrapper.our_guides .bg-content .founders_name p span {
+  @apply font-700 uppercase;
+}
+/* image-with-text-wrapper our_guides css end */
+
+/* our staff grid */
+.ourstaff-grid .staff-grid .grid-box .staff-img img{
+  @apply w-[100px] h-[100px] object-cover mx-auto;
+}
+.staff-data p {
+  @apply text-White;
+}
+.staff-data a {
+  @apply hover:text-Tengerine;
+}
+.ourstaff-grid .staff-grid .grid-box::before {
+  @apply content-[''] absolute bottom-0 left-0 w-full h-full rounded-[20px];
+  background: linear-gradient(0deg, #606B2F, #606B2F);
+}
+.ourstaff-grid .staff-grid .grid-box::after {
+  @apply content-[''] absolute bottom-0 left-0 w-full h-full rounded-[20px];
+  background:linear-gradient(180deg, rgba(0, 0, 0, 0) 19.71%, #000000 57.12%);
+}
+/* our staff grid */
+
+/* guide zigzag */
+.guide_zigzag .inner_img img {
+  @apply border-[4px] border-solid border-Beige rounded-[20px];
+}
+.guide_zigzag .user_email a {
+  @apply text-17 leading-[21px] text-Red hover:text-Font;
+}
+.guide_zigzag .user_email img {
+  @apply w-[20px] h-[20px] object-contain;
+}
+/* guide zigzag */
+
+/* location-inner-start */
+.location-wrapper .about-info ul {
+  @apply flex flex-col gap-[40px] justify-start items-start;
+}
+.location-wrapper .about-info ul li {
+  @apply flex flex-wrap gap-[4px] relative w-full 479:flex-col;
+}
+.location-wrapper .about-info ul li span {
+  @apply flex flex-wrap gap-[10px] text-Tengerine font-700 text-[17px] leading-[21px] font-museo;
+}
+.location-wrapper .about-info ul li p,
+.location-wrapper .about-info ul li a {
+  @apply text-Font text-[17px] leading-[21px] font-museo font-400;
+}
+.location-wrapper .about-info ul li::after {
+  @apply content-[''] absolute bottom-[-20px] left-0 h-[1px] w-full bg-Orange;
+}
+.location-wrapper .about-info ul li a:hover {
+  @apply text-Orange;
+}
+.location-wrapper .zigzag-content img {
+  object-position: 65%;
+}
+.location-wrapper .zigzag-content  {
+  @apply relative;
+}
+
+.location-wrapper .zigzag-content .activity-tab-content-thumb::after {
+  @apply content-[''] absolute top-0 left-0 h-full w-full bg-Black bg-opacity-20;
+}
+.location-wrapper .inner_img img {
+    @apply border-[4px] border-solid border-Beige rounded-[20px];
+ }
+ .img-grid-wrapper .card-img {
+  @apply relative pt-[84.91%] 479:pt-[110.91%] h-full w-full;
+}
+.img-grid-wrapper .card-img img {
+  @apply absolute top-0 left-0 h-full w-full object-cover;
+}
+.img-grid-wrapper .card-img::after {
+  @apply content-[''] absolute top-0 left-0 h-full w-full;
+  background: linear-gradient(
+    180.03deg,
+    rgba(0, 0, 0, 0) 36.28%,
+    #000000 99.06%
+  );
+}
+.img-grid-wrapper .card-description h4 {
+  @apply 479:!text-[26px];
+}

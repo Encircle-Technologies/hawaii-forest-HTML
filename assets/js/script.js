@@ -277,8 +277,8 @@ $(document).ready(function ($) {
   if ($('.brand-wrapper').length) {
     var brand_slide = new Swiper('.brand-slide', {
       allowTouchMove: false,
-      slidesPerView: '1',
-      slidesPerGroup: 2.5,
+      slidesPerView: '2.5',
+      // slidesPerGroup: 2.5,
       spaceBetween: 60,
       speed: 10000,
       loop: true,
