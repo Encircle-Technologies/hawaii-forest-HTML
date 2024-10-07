@@ -126,7 +126,7 @@
     @apply text-12 leading-22;
   }
 
-  .title-museo h4 {
+  title-museo. h4 {
     @apply xxxl:text-24 xxxl:leading-[28px] text-17 leading-[21px] capitalize;
   }
   .title-museo h5 {
@@ -449,6 +449,9 @@
 
     .search-bar.active {
       @apply block;
+    }
+    .search-bar .search-form button {
+      @apply hidden;
     }
 
     .announcement-wrapper .btn-link-white {
@@ -1256,12 +1259,6 @@ h3,
 }
 /* image-with-text-wrapper css end */
 
-@screen 767 {
-  .image-with-text-wrapper .image-with-text.right_content::before {
-    background: linear-gradient(180deg, #000000 35.12%, rgba(0, 0, 0, 0) 82.28%);
-  }
-}
-
 
 /* 03 - 10 - 2024 css start */
 /* nature-slider_wrapper css start */
@@ -1433,4 +1430,39 @@ h3,
 }
 .img-grid-wrapper .card-description h4 {
   @apply 479:!text-[26px];
+}
+
+/* carrer-grid-wrapper css start */
+.carrer-grid-wrapper .carrer-grid .grid-box .grid-img img {
+  @apply absolute top-0 left-0;
+}
+.carrer-grid-wrapper .carrer-grid .grid-box .grid-img::before {
+  @apply content-[''] absolute bottom-0 left-0 w-full h-full z-1;
+  background: linear-gradient(180.03deg, rgba(0, 0, 0, 0) 36.28%, #000000 84.73%);
+}
+.carrer-grid-wrapper.images_grid .carrer-grid .grid-box .grid-img::before {
+  @apply content-[none];
+}
+.carrer-grid-wrapper.images_grid .carrer-grid .grid-box .grid-img img {
+  @apply !object-contain;
+}
+/* carrer-grid-wrapper css end */
+
+.job-opportunities .carrer-grid .grid-box .grid-img img {
+  @apply absolute top-0 left-0 rounded-[20px];
+}
+.job-opportunities .carrer-grid .grid-box .grid-img {
+  @apply rounded-[20px] border-[4px] border-solid border-Beige;
+}
+.job-opportunities .carrer-grid .grid-box .grid-img::before {
+  @apply content-[''] absolute bottom-0 left-0 w-full h-full z-1 rounded-[18px];
+  background: linear-gradient(180.03deg, rgba(0, 0, 0, 0) 36.28%, #000000 84.73%);
+}
+.job-opportunities .carrer-grid .grid-box .staff-data {
+  @apply rounded-[20px];
+}
+
+/* general content css start */
+.general-content .content p a {
+  @apply font-700 text-Font no-underline hover:text-Tengerine;
 }

@@ -48,3 +48,21 @@
 .img-grid-wrapper .card-description h4 {
   @apply 479:!text-[26px];
 }
+
+/* contact-start */
+.contact-wrapper .about-info ul li span {
+  @apply flex flex-wrap gap-[10px] text-Tengerine font-700 text-[17px] leading-[21px] font-museo;
+}
+.contact-wrapper .about-info ul li p,
+.contact-wrapper .about-info ul li a {
+  @apply text-Font text-[17px] leading-[21px] font-museo font-400;
+}
+.contact-wrapper .about-info ul li {
+  @apply flex flex-wrap gap-[4px] relative w-full 479:flex-col mt-[10px];
+}
+.contact-wrapper .about-info{
+  @apply border-0 border-b-2 border-b-Orange border-solid py-20  ;
+}
+.contact-wrapper .about-info:first-child{
+  @apply pt-0
+}

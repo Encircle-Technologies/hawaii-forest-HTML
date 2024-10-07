@@ -105,7 +105,7 @@ $(document).ready(function ($) {
   if ($('.adventure-wrapper').length) {
     $('.takeover-card .details').each(function (index) {
       var $thisCard = $(this);
-      var cardImage = $('.card' + (index + 1));
+      var cardImage = $('#card' + (index + 1));
       $thisCard.hover(
         function () {
           $thisCard.addClass('z-30');
